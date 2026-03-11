@@ -128,16 +128,16 @@ const ArtistDesktop = () => {
             </button>
             <div className="w-[40%] h-fit">
               <div className="w-[12rem] h-[16rem] bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg')] bg-cover z-25 rounded-[1rem] flex flex-col justify-end items-center">
-                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1743686164/zubli_mx2wfy.webp' className="inline-block w-[10rem] h-[13rem] object-cover object-center pt-[0.5rem] rounded-[1rem]" alt='Zublee Baruah' />
+                <img src='https://res.cloudinary.com/dp4sknsba/image/upload/v1773251606/0c06a19334af7de38a40496e01092e71df322348_g0ympi.jpg' className="inline-block w-[10rem] h-[13rem] object-cover object-center pt-[0.5rem] rounded-[1rem]" alt='Zubeen Garg' />
                 <div className="w-[8rem] h-[4rem] z-30 text-[#c35d5a] flex flex-col items-center justify-center text-sm bg-[url('https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp')] bg-[length:100%_100%] scale-150">
-                  <p>Zublee Baruah</p>
-                  <div className='border-[#c35d5a] border-t-2 border-dashed h-[0.8px] w-[80%]' />
-                  <p>singer</p>
+                  <p className='text-[#b02227] font-semibold text-sm'>Zubeen Garg</p>
+                <div className='border-[#b02227] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[60%]' />
+                <p className='text-[10px] text-[#b02227] font-semibold'>Band</p>
                 </div>
               </div>
             </div>
             <div className="w-[80vw] h-fit flex flex-col justify-center items-center pl-[2rem]">
-              <p className="font-moglan text-[3rem] font-[800] text-center p-[1rem] text-[#5f1516] whitespace-nowrap">Zublee Baruah</p>
+              <p className="font-moglan text-[3rem] font-[800] text-center p-[1rem] text-[#5f1516] whitespace-nowrap">Zubeen Garg</p>
               <p className="text-[15px] font-gotham text-justify text-[#5f1516] font-[300] indent-[1rem]">
                 “আজি কিয় হিয়া কঁপে... (Assamese text abbreviated for brevity, replace with full block from Posua 2025)”
               </p>
@@ -161,16 +161,16 @@ const ArtistDesktop = () => {
             </button>
             <div className="w-[40%] h-fit">
               <div className="w-[12rem] h-[16rem] bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg')] bg-cover z-25 rounded-[1rem] flex flex-col justify-end items-center">
-                <img src='https://res.cloudinary.com/dmezugavw/image/upload/v1743767974/WhatsApp_Image_2025-04-04_at_17.22.54_215e91e6_mjkier.jpg' className="inline-block w-[10rem] h-[13rem] object-cover object-center pt-[0.5rem] rounded-[1rem]" alt='Patkai band' />
+                <img src='https://res.cloudinary.com/dp4sknsba/image/upload/v1773251606/0c06a19334af7de38a40496e01092e71df322348_g0ympi.jpg' className="inline-block w-[10rem] h-[13rem] object-cover object-center pt-[0.5rem] rounded-[1rem]" alt='Patkai band' />
                 <div className="w-[8rem] h-[4rem] z-30 text-[#c35d5a] flex flex-col items-center justify-center text-sm bg-[url('https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp')] bg-[length:100%_100%] scale-150">
-                  <p>Patkai</p>
-                  <div className='border-[#c35d5a] border-t-2 border-dashed h-[0.8px] w-[80%]' />
-                  <p>band</p>
+                  <p className='text-[#b02227] font-semibold text-sm'>Zubeen Garg</p>
+                <div className='border-[#b02227] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[60%]' />
+                <p className='text-[10px] text-[#b02227] font-semibold'>Band</p>
                 </div>
               </div>
             </div>
             <div className="w-[80vw] h-fit flex flex-col justify-center items-center pl-[2rem]">
-              <p className="font-moglan text-[3rem] font-[800] text-center p-[1rem] text-[#5f1516] whitespace-nowrap">Patkai</p>
+              <p className="font-moglan text-[3rem] font-[800] text-center p-[1rem] text-[#5f1516] whitespace-nowrap">Zubeen Garg</p>
               <p className="text-[15px] font-gotham text-justify text-[#5f1516] font-[300] indent-[1rem]">
                 সূর্য অস্ত যোৱা আৰু সন্ধিয়াৰ মৃদু বতাহে পৃথিৱীৰ প্ৰতিধ্বনি...
               </p>
