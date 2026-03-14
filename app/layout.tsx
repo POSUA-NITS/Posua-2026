@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+import Footer from "../components/footer";
+const moglan = localFont({
+  src: "../public/fonts/Moglan_DEMO.ttf",
+  variable: "--font-moglan",
+});
+
+const avita = localFont({
+  src: "../public/fonts/Avita-Medium.otf",
+  variable: "--font-avita",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +37,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${moglan.variable} ${avita.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

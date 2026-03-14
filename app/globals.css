@@ -1,1 +1,7 @@
 @import "tailwindcss";
+.font-moglan {
+  font-family: var(--font-moglan);
+}
+.font-avita {
+  font-family: var(--font-avita);
+}
