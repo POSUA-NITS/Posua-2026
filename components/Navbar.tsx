@@ -20,10 +20,9 @@ const Navbar = () => {
   return (
     <nav className="w-full absolute top-0 left-0 z-50">
       <div className="max-w-[1150px] mx-auto flex items-center justify-between px-6 py-4 font-gotham">
-
         {/* Logo */}
         <img
-          src="/photos/posualoader 1.png"
+          src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930432/posualoader_1_oj6wp8.png"
           alt="Posua Logo"
           className="h-16 w-auto"
         />
