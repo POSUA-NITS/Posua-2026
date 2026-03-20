@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer components {
+  /* Boat CSS Animation */
+  @keyframes moveBoat {
+    0% {
+      transform: translateX(110vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-boat {
+    animation: moveBoat 25s linear infinite;
+  }
+}

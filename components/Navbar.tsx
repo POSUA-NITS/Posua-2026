@@ -19,13 +19,13 @@ const Navbar = () => {
 
   return (
     <nav className="w-full absolute top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 font-gotham">
+      <div className="max-w-[1150px] mx-auto flex items-center justify-between px-6 py-4 font-gotham">
 
         {/* Logo */}
         <img
-          src="https://res.cloudinary.com/dp4sknsba/image/upload/v1773253463/7cbd92797f0ff8add89c58b883199ed276650e7a_yceyvz.gif"
+          src="/photos/posualoader 1.png"
           alt="Posua Logo"
-          className="h-12 w-auto"
+          className="h-16 w-auto"
         />
 
         {/* Desktop Menu */}
