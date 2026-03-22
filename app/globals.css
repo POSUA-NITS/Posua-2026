@@ -1,5 +1,10 @@
 @import "tailwindcss";
-
+@font-face {
+  font-family: "MoglanDemo";
+  src: url("/fonts/Moglan_DEMO.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @layer components {
   /* Boat CSS Animation */
   @keyframes moveBoat {
