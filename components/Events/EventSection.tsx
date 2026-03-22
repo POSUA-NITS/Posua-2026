@@ -9,7 +9,7 @@ interface Materials {
 }
 const EventSection = ({ image, text, reverse, title }: Materials) => {
   return (
-    <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-10 p-4 items-start">
+    <div className="w-full grid grid-cols-1  sm:grid-cols-2 gap-10 p-4 items-start">
       {/* Image */}
       <div className={`order-1 ${reverse ? "sm:order-2" : "sm:order-1"}`}>
         <Image

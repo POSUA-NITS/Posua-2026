@@ -11,7 +11,7 @@ const Hero = () => {
           alt="decorative header"
           width={220}
           height={110}
-          className="mx-auto -mt-15"
+          className="mx-auto "
           unoptimized
         />
         <h1 className="font-moglan sm:text-7xl text-6xl text-[#CB2229] -mt-20">
