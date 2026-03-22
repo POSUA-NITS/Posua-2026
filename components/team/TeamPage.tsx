@@ -341,10 +341,10 @@ export default function TeamPage() {
           </div>
         </section>
       </div>
-{/* 
+
       <div className="w-full relative z-10 mt-8 sm:mt-10">
         <Footer />
-      </div> */}
+      </div>
     </main>
   );
 }
