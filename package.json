@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "framer-motion": "^12.35.2",
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "next": "15.1.0",
+    "posua26": "link:",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-swipeable": "^7.0.2"
   },
   "devDependencies": {
