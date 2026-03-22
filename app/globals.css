@@ -1,4 +1,10 @@
 @import "tailwindcss";
+.font-moglan {
+  font-family: var(--font-moglan);
+}
+.font-avita {
+  font-family: var(--font-avita);
+}
 @font-face {
   font-family: "MoglanDemo";
   src: url("/fonts/Moglan_DEMO.ttf") format("truetype");
