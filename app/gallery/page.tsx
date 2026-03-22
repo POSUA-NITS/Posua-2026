@@ -13,7 +13,7 @@ export default function GalleryPage() {
       "
     >
 
-      <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 pt-16 sm:pt-20 lg:pt-24 pb-12 sm:pb-14 lg:pb-16">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 pt-24 sm:pt-20 lg:pt-24 pb-12 sm:pb-14 lg:pb-16">
 
         <h1
           className="text-[64px] sm:text-[80px] md:text-[96px] lg:text-[128px] leading-[100%] tracking-[-0.04em] text-[#CF585E]"
