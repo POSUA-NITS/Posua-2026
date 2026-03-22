@@ -1,0 +1,44 @@
+"use client";
+
+import { useState } from "react";
+
+export default function GalleryFilter() {
+  const years = ["2020", "2021", "2022"];
+  const [activeYear, setActiveYear] = useState("2021");
+
+  return (
+    <div className="flex justify-center mt-6 sm:mt-7 lg:mt-8 mb-1">
+      
+      <div className="flex gap-6 sm:gap-10 lg:gap-16 items-center h-[52px] sm:h-[58px] lg:h-[64px]">
+
+        {years.map((year) => {
+          const isActive = year === activeYear;
+
+          return (
+            <button
+              key={year}
+              onClick={() => setActiveYear(year)}
+              className={`
+                min-w-[72px] sm:min-w-[80px] lg:w-[91px]
+                h-[38px] sm:h-[42px] lg:h-[48px]
+                rounded-full
+                px-[12px] sm:px-[14px] lg:px-[17px]
+                py-[5px] sm:py-[6px] lg:py-[7px]
+                flex items-center justify-center
+                text-xs sm:text-sm lg:text-sm font-medium
+                transition
+                ${isActive 
+                  ? "bg-[#D54E54] text-white" 
+                  : "bg-[#FFD586]/80 text-black"}
+              `}
+            >
+              {year}
+            </button>
+          );
+        })}
+
+      </div>
+
+    </div>
+  );
+}
