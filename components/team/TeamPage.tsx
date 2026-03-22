@@ -200,7 +200,7 @@ export default function TeamPage() {
   });
 
   return (
-    <main className="min-h-screen w-full bg-[#fff5e6] overflow-x-hidden relative flex flex-col items-center">
+    <main className="min-h-screen w-full bg-white overflow-x-hidden relative flex flex-col items-center">
       <div className="hidden sm:block absolute top-[80px] md:top-[120px] left-0 right-0 h-[4px] sm:h-[6px] bg-[#c08080]/60 z-20 pointer-events-none" />
       <div className="hidden sm:block absolute bottom-[20px] left-0 right-0 h-[4px] sm:h-[6px] bg-[#c08080]/60 z-20 pointer-events-none" />
 
