@@ -10,3 +10,5 @@ pnpm build
 # Preview production build
 pnpm preview
 
+posua26.live
+
