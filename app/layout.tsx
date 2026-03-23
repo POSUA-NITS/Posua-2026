@@ -46,7 +46,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${moglan.variable} ${avita.variable} antialiased`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   );
