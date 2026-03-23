@@ -19,9 +19,12 @@ const Landing=()=>{
       <div className="absolute bottom-0 right-0">
         <img src="/flowerleft.png" alt="flower" className="w-[8rem] -scale-x-100 h-[8rem] object-cover"/>
       </div>
+      <div className="absolute -top-[5vh] -right-[8vw]">
+        <img src="/tree2.svg" alt="tree" className="h-[38rem] object-cover" />
+      </div>
       <div className="flex flex-row items-center justify-around absolute -bottom-[50vh] left-0 w-full h-full" style={{backgroundImage:"url('/bamboo.svg')",backgroundRepeat:"repeat",backgroundSize:"cover"}}>
       </div>
-      <div className="absolute top-0 left-0 w-screen h-screen backdrop-blur-[1px] bg-[#00000034]">
+      <div className="absolute top-0 left-0 w-screen h-screen bg-[#ffffff14]">
         <div className="flex flex-col items-center h-full w-full justify-center">
           <img src="/logoposua.png" alt="logo" className="object-cover"/>
         </div>
