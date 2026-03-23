@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 const moglan = localFont({
   src: "../public/fonts/Moglan_DEMO.ttf",
   variable: "--font-moglan",
