@@ -1,1 +1,28 @@
 @import "tailwindcss";
+.font-moglan {
+  font-family: var(--font-moglan);
+}
+.font-avita {
+  font-family: var(--font-avita);
+}
+@font-face {
+  font-family: "MoglanDemo";
+  src: url("/fonts/Moglan_DEMO.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@layer components {
+  /* Boat CSS Animation */
+  @keyframes moveBoat {
+    0% {
+      transform: translateX(110vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-boat {
+    animation: moveBoat 25s linear infinite;
+  }
+}
