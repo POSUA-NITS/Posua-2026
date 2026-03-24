@@ -183,6 +183,12 @@ const Landing = () => {
                 </div>
               </div>
             </div>
+            <div className="absolute top-0 right-0 w-[60%] h-[80%] flex flex-col items-start justify-center px-[5%]">
+              <h1 className="text-5xl font-bold text-[#000000] mb-4">Welcome to Posua 2026</h1>
+              <p className="text-lg text-[#000000]">
+                Experience the vibrant culture of Assam at Posua 2026! Join us for a celebration of music, dance, and tradition in the heart of Assam. Don't miss out on this unforgettable event!
+              </p>
+            </div>
           </div>
         </div>
       </div>
