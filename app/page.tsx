@@ -164,37 +164,54 @@ const Landing = () => {
           <img src="/jaapi-removebg-preview.png" alt="Jaapi" className="jaapi object-cover w-[40rem] h-[40rem]" />
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-[#00000038] flex flex-col md:flex-row items-center justify-center">
-          <div className="flex flex-col md:flex-row items-center justify-center absolute top-[20%] left-[10%] w-[80%] h-[60%]">
-            <div className="absolute top-0 left-0 w-[40%] h-[80%]">
-              <img src="/rangghar.png" alt="Rangghar" className="absolute bottom-0 left-0 object-cover w-full h-full" />
-              <div className="absolute bottom-0 left-0 flex flex-row items-end justify-center w-full h-fit z-20 px-[5%]">
-                {/* 3. Wrap GIFs to control individual size relative to Rangghar */}
-                <div className="w-[25%] h-auto">
-                  <img src="/nasoni1.gif" alt="Kokal bhangi bhangi" className="w-full h-full object-contain" />
-                </div>
-                <div className="w-[25%] h-auto">
-                  <img src="/nasoni2.gif" alt="aijyoi kolija" className="w-full h-full object-contain" />
-                </div>
-                <div className="w-[28%] h-auto">
-                  <img src="/dhulia.gif" alt="Dhulia" className="w-full h-full object-contain" />
-                </div>
-                <div className="w-[28%] h-auto">
-                  <img src="/pepa.gif" alt="pepa" className="w-full h-full object-contain" />
+          {/* 1. Main Container: Fixed height on desktop, auto height on mobile to allow stacking */}
+          <div className="absolute top-0 left-0 w-full h-full bg-[#00000038] flex items-center justify-center p-4 overflow-y-auto md:overflow-hidden">
+
+            <div className="relative flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-7xl lg:h-[60%]">
+
+              {/* 2. Visuals Section (Rangghar + GIFs) */}
+              {/* On mobile: width is full. On desktop: width is 40% */}
+              <div className="relative w-full md:w-[45%] aspect-video md:h-full">
+                <img
+                  src="/rangghar.png"
+                  alt="Rangghar"
+                  className="absolute bottom-0 left-0 object-contain w-full h-full z-10"
+                />
+
+                {/* Humans at the base */}
+                <div className="absolute bottom-0 left-0 flex flex-row items-end justify-center w-full h-fit z-20 px-[5%]">
+                  <div className="w-[20%] h-auto">
+                    <img src="/nasoni1.gif" alt="nasoni" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-[20%] h-auto">
+                    <img src="/nasoni2.gif" alt="nasoni" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-[23%] h-auto">
+                    <img src="/dhulia.gif" alt="dhulia" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="w-[23%] h-auto">
+                    <img src="/pepa.gif" alt="pepa" className="w-full h-full object-contain" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="absolute top-0 right-0 w-[40%] h-auto flex flex-col items-center justify-center p-[3rem] border-8 border-[#FF6B6B] bg-[#ffffff] text-[#550E11]">
-              <div className="flex items-center justify-center h-fit w-fit">
-                <img src="/texttopabout.svg" className="h-auto w-full" alt="Welcome to Posua 2026" />
+
+              {/* 3. Content Section (Text Box) */}
+              {/* On mobile: standard block. On desktop: relative/absolute positioning */}
+              <div className="w-full md:w-[45%] flex flex-col items-center justify-center p-6 md:p-[3rem] border-4 md:border-8 border-[#FF6B6B] bg-[#ffffff] text-[#550E11] shadow-2xl">
+                <div className="flex items-center justify-center mb-4">
+                  <img src="/texttopabout.svg" className="h-auto w-full max-w-[250px]" alt="Welcome" />
+                </div>
+
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 font-moglan">About Us</h1>
+
+                <p className="text-base md:text-lg font-alexbrush text-center leading-relaxed">
+                  Posua, the whisper of spring that breathes life into our land,
+                  a melody carried by the winds of tradition. It binds us in the
+                  warmth of brotherhood, painting the air with the hues of our heritage.
+                  A tribute to our roots, a celebration of identity—Posua is where culture finds its voice.
+                </p>
               </div>
-              <h1 className="text-5xl font-bold mb-4 font-moglan">About Us</h1>
-              <p className="text-lg font-alexbrush text-center">
-                Posua, the whisper of spring that breathes life into our land,
-                a melody carried by the winds
-                of tradition. It binds us in the warmth of brotherhood, painting the air with the
-                hues of our heritage.
-                A tribute to our roots, a celebration of identity—Posua is where culture finds its voice.
-              </p>
+
             </div>
           </div>
         </div>
