@@ -161,7 +161,7 @@ const Landing = () => {
           <img src="/kothal.png" alt="kothal" className="object-cover w-[32rem] h-[32rem]" />
         </div> */}
         <div className="flex flex-col items-center justify-center h-full w-full">
-          <img src="/jaapi-removebg-preview.png" alt="Jaapi" className="jaapi object-cover w-[40rem] h-[40rem]" />
+          <img src="/jaapi-removebg-preview.png" alt="Jaapi" className="jaapi object-cover w-[20rem] h-[20rem] lg:w-[40rem] lg:h-[40rem]" />
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-[#00000038] flex flex-col md:flex-row items-center justify-center">
           {/* 1. Main Container: Fixed height on desktop, auto height on mobile to allow stacking */}
@@ -179,7 +179,7 @@ const Landing = () => {
                 />
 
                 {/* Humans at the base */}
-                <div className="absolute bottom-0 left-0 flex flex-row items-end justify-center w-full h-fit z-20 px-[5%]">
+                <div className="absolute bottom-[1rem] left-0 flex flex-row items-end justify-center w-full h-fit z-20 px-[5%]">
                   <div className="w-[20%] h-auto">
                     <img src="/nasoni1.gif" alt="nasoni" className="w-full h-full object-contain" />
                   </div>
