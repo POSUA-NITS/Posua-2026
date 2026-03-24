@@ -25,4 +25,32 @@
   .animate-boat {
     animation: moveBoat 25s linear infinite;
   }
+
+  /* Floating Button Animation */
+  @keyframes float {  
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .enterbutton {
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+  }
+
+  /* rotating jaapi about*/
+  @keyframes rotateJaapi {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .jaapi {
+    animation: rotateJaapi 10s linear infinite;
+  }
 }
+
