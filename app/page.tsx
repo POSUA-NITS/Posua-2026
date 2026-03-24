@@ -183,10 +183,17 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute top-0 right-0 w-[60%] h-[80%] flex flex-col items-start justify-center px-[5%]">
-              <h1 className="text-5xl font-bold text-[#000000] mb-4">Welcome to Posua 2026</h1>
-              <p className="text-lg text-[#000000]">
-                Experience the vibrant culture of Assam at Posua 2026! Join us for a celebration of music, dance, and tradition in the heart of Assam. Don't miss out on this unforgettable event!
+            <div className="absolute top-0 right-0 w-[40%] h-auto flex flex-col items-center justify-center p-[3rem] border-8 border-[#FF6B6B] bg-[#ffffff] text-[#550E11]">
+              <div className="flex items-center justify-center h-fit w-fit">
+                <img src="/texttopabout.svg" className="h-auto w-full" alt="Welcome to Posua 2026" />
+              </div>
+              <h1 className="text-5xl font-bold mb-4 font-moglan">About Us</h1>
+              <p className="text-lg font-alexbrush text-center">
+                Posua, the whisper of spring that breathes life into our land,
+                a melody carried by the winds
+                of tradition. It binds us in the warmth of brotherhood, painting the air with the
+                hues of our heritage.
+                A tribute to our roots, a celebration of identity—Posua is where culture finds its voice.
               </p>
             </div>
           </div>

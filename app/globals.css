@@ -1,10 +1,16 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 .font-moglan {
   font-family: var(--font-moglan);
 }
 .font-avita {
   font-family: var(--font-avita);
 }
+.font-alexbrush {
+  font-family: 'Alex Brush', cursive;
+}
+
 @font-face {
   font-family: "MoglanDemo";
   src: url("/fonts/Moglan_DEMO.ttf") format("truetype");
