@@ -26,6 +26,19 @@ const Landing = () => {
         ease: "power2.inOut",
       }, 0); // '0' makes this start at the same time as the first one
   };
+  const aboutToLanding = () => {
+    const tl = gsap.timeline();
+    tl.to(landingRef.current, {
+      x: "0",
+      duration: 1.5,
+      ease: "power2.inOut",
+    }, 0) // '0' ensures it starts at the beginning of the timeline
+      .to(aboutRef.current, {
+        x: "0",
+        duration: 1.5,
+        ease: "power2.inOut",
+      }, 0); // '0' makes this start at the same time as the first one
+  };
   useEffect(() => {
     setHasMounted(true);
   }, []);
@@ -210,6 +223,14 @@ const Landing = () => {
                   warmth of brotherhood, painting the air with the hues of our heritage.
                   A tribute to our roots, a celebration of identity—Posua is where culture finds its voice.
                 </p>
+                <div className="flex flex-col sm:flex-row gap-4 mt-2">
+                  <button onClick={aboutToLanding} className="bg-[#FF6B6B] cursor-pointer text-[#ffffff] text-sm py-2 px-4 rounded-md hover:bg-[#ff5252] transition-colors duration-300">
+                    Go back
+                  </button>
+                  <button className="bg-[#FF6B6B] cursor-pointer text-[#ffffff] text-sm py-2 px-4 rounded-md hover:bg-[#ff5252] transition-colors duration-300">
+                    View More
+                  </button>
+                </div>
               </div>
 
             </div>
