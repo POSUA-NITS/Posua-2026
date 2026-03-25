@@ -1,0 +1,9 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hill1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8b5ac" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e2e8e4" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <path d="M 0 200 L 0 80 C 80 50 150 120 250 140 C 320 155 380 180 400 200 Z" fill="url(#hill1Grad)" />
+</svg>
