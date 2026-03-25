@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Landing = () => {
-  // 1. Refs for moving layers (Removed flowers from here)
-  const [hasMounted, setHasMounted] = React.useState(false);
+  // 1. Refs for moving layers (Removed flowers from here)=
   const mountainRef = useRef(null);
   const sunRef = useRef(null);
   const cloudRef = useRef(null);
@@ -40,11 +39,8 @@ const Landing = () => {
       }, 0); // '0' makes this start at the same time as the first one
   };
   useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  useEffect(() => {
-    if (!hasMounted) return;
-    let ctx = gsap.matchMedia();
+    
+    const ctx = gsap.matchMedia();
 
     ctx.add("(min-width: 1024px)", () => {
       // Scale up slightly to hide edges during 2D translation
@@ -92,10 +88,8 @@ const Landing = () => {
     });
 
     return () => ctx.revert();
-  }, [hasMounted]);
-  if (!hasMounted) {
-    return <div className="w-screen h-screen bg-white" />;
-  }
+  }, []);
+  
   return (
     <div className="relative top-0 left-0 w-screen h-screen overflow-hidden">
       <div
