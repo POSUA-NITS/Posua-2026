@@ -5,7 +5,7 @@ interface Props {
   image?: string;
 }
 
-export default function GalleryCard({ expanded = false, image }: Props) {
+const GalleryCard = ({ expanded = false, image }: Props) => {
   return (
     <div
       className={`
@@ -35,7 +35,9 @@ export default function GalleryCard({ expanded = false, image }: Props) {
           <img
             src={image}
             alt="Gallery"
-            className="w-full h-full object-cover border border-[#88857B]"
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover object-center border border-[#88857B]"
           />
         ) : (
           <div
@@ -50,4 +52,6 @@ export default function GalleryCard({ expanded = false, image }: Props) {
       </div>
     </div>
   );
-}
+};
+
+export default React.memo(GalleryCard);

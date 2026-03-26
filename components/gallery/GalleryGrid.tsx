@@ -1,8 +1,22 @@
 "use client";
 import React, { useRef, useState } from "react";
 import GalleryCard from "./GalleryCard";
+import data from "./images.json";
 
-const GalleryGrid = () => {
+interface Props {
+  activeYear: string;
+}
+
+const GalleryGrid = ({ activeYear }: Props) => {
+  const rawImages =
+  activeYear === "2024"
+    ? data.images1
+    : activeYear === "2023"
+    ? data.images2
+    : data.images3;
+
+const images = rawImages.slice(0, 9);
+
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -33,12 +47,14 @@ const GalleryGrid = () => {
   };
 
   const handleLeave = () => {
-    setHoveredIndex(null);
+  setHoveredIndex(null);
 
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  if (timeoutRef.current) clearTimeout(timeoutRef.current);
 
+  timeoutRef.current = setTimeout(() => {
     setExpandedIndex(null);
-  };
+  }, 120);
+};
 
   const handleClick = (index: number) => {
     setSelectedIndex(index);
@@ -48,19 +64,21 @@ const GalleryGrid = () => {
     <>
       <div className="flex items-center justify-center pt-4 sm:pt-5 lg:pt-6 pb-1 sm:pb-2 mt-6 sm:mt-8 lg:mt-10">
         <div
-          className="flex flex-col gap-2 sm:gap-3 lg:gap-4 w-full max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl aspect-square transition-transform duration-[950ms]"
+          className="flex flex-col gap-2 sm:gap-3 lg:gap-4 w-full max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl aspect-square transition-transform duration-[900ms] transform-gpu"
           style={{
             transform: expandedIndex !== null ? "scale(1.05)" : "scale(1)",
             transitionTimingFunction: easing,
+            willChange: "transform",
           }}
         >
           {[0, 1, 2].map((rowIndex) => (
             <div
               key={rowIndex}
-              className="flex flex-row gap-2 sm:gap-3 lg:gap-4 transition-all duration-[900ms]"
+              className="flex flex-row gap-2 sm:gap-3 lg:gap-4 transition-[flex] duration-[900ms]"
               style={{
                 flex: activePos?.row === rowIndex ? 1.6 : 1,
                 transitionTimingFunction: easing,
+                willChange: "flex",
               }}
             >
               {[0, 1, 2].map((colIndex) => {
@@ -73,13 +91,14 @@ const GalleryGrid = () => {
                     onMouseEnter={() => handleEnter(index)}
                     onMouseLeave={handleLeave}
                     onClick={() => handleClick(index)}
-                    className="transition-all duration-[900ms] h-full will-change-[flex,transform]"
+                    className="h-full transition-[flex,transform] duration-[900ms] transform-gpu"
                     style={{
                       flex: isActiveColumn ? 1.6 : 1,
                       transitionTimingFunction: easing,
+                      willChange: "flex, transform",
                     }}
                   >
-                    <GalleryCard />
+                    <GalleryCard image={images[index]?.url} />
                   </div>
                 );
               })}
@@ -98,7 +117,7 @@ const GalleryGrid = () => {
             className="w-[92vw] max-w-2xl aspect-square cursor-default"
             onClick={(e) => e.stopPropagation()}
           >
-            <GalleryCard expanded />
+            <GalleryCard expanded image={images[selectedIndex]?.url} />
           </div>
         </div>
       )}
