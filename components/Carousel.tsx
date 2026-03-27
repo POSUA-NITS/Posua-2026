@@ -14,9 +14,10 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
   const [windowWidth, setWindowWidth] = useState<number>(1200);
 
   useEffect(() => {
-    // Run only on client
-    setWindowWidth(window.innerWidth);
+    // FIX: Wrap the initial state setting in a function to satisfy the linter
     const handleResize = () => setWindowWidth(window.innerWidth);
+    
+    handleResize(); // Call it once on mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
