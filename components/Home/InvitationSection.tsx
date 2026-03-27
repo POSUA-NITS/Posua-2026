@@ -24,15 +24,38 @@ export default function InvitationSection() {
         />
       </div>
 
-      {/* Centre invitation image — larger on mobile, constrained on desktop */}
-      <div className="relative z-10 w-[80%] sm:w-[70%] md:w-[55%] max-w-[700px] aspect-[3/4]">
-        <Image
-          src="/home/invitation.png"
-          alt="Invitation"
-          fill
-          className="object-contain"
-          priority
-        />
+      {/* Centre content wrapper */}
+      <div className="relative z-10 w-[90%] sm:w-[80%] md:w-[60%] max-w-[800px] flex flex-col items-center gap-4 mt-12 mb-12">
+        {/* Header Ornament */}
+        <div className="relative w-[180px] sm:w-[220px] md:w-[280px] h-[30px] sm:h-[40px]">
+          <Image
+            src="/home/invitation-head.png"
+            alt="Invitation Ornament"
+            fill
+            className="object-contain"
+          />
+        </div>
+        
+        {/* "Invitation" Text */}
+        <div className="relative w-[200px] sm:w-[250px] md:w-[220px] h-[50px] sm:h-[70px] -mt-2 sm:-mt-4">
+          <Image
+            src="/home/invitation-font.png"
+            alt="Invitation Text"
+            fill
+            className="object-contain"
+          />
+        </div>
+
+        {/* Main Invitation Card */}
+        <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[7/9] mt-4 shadow-xl">
+          <Image
+            src="/home/invitation-card.png"
+            alt="Invitation Card"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
       </div>
 
     </section>

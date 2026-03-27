@@ -18,7 +18,7 @@ export default function AboutSection() {
 
       {/* Right — About Us image */}
       {/* On mobile: full width just below. On desktop: 40% width, shifted down */}
-      <div className="relative w-full md:h-[30vw] min-h-[220px] md:w-[40%] md:h-[30vh] md:self-end">
+      <div className="relative w-full md:h-[30vw] min-h-[260px] md:w-[40%] md:h-[30vh] md:self-end">
         <Image
           src="/home/home-aboutUs.png"
           alt="About Posua"

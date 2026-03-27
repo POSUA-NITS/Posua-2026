@@ -11,8 +11,8 @@ const LYRICS = [
 ];
 
 const WAVE_BARS = [6, 10, 18, 26, 34, 40, 44, 40, 34, 26, 18, 10, 6, 10, 18,
-                   26, 34, 40, 44, 40, 34, 28, 20, 14, 8, 12, 22, 32, 40, 44,
-                   38, 28, 18, 10, 6];
+  26, 34, 40, 44, 40, 34, 28, 20, 14, 8, 12, 22, 32, 40, 44,
+  38, 28, 18, 10, 6];
 
 export default function TributePage() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -92,10 +92,9 @@ export default function TributePage() {
       <div className="relative w-full max-w-6xl h-full flex flex-col items-center px-4">
 
         {/* TRIBUTE HEADER */}
-        <div className="flex flex-col items-center z-30 md:pt-2 ">
-          <div className="w-20 h-28 md:w-40 md:h-40 sm:w-26 sm:h-34 relative">
-            <Image src="/home/tributeFrame.png" alt="ornament" fill className="-mt-17 md:mt-1 sm:-mt-12" />
-            <h2 className="text-[#632121] text-2xl sm:text-3xl md:text-5xl font-serif  md:ml-1 sm:-mt-12 md:mt-25">Tribute</h2>
+        <div className="flex flex-col items-center z-30 pt-1 md:pt-8 mb-8 md:mb-12">
+          <div className="w-[14rem] h-[5rem] sm:w-[18rem]  sm:h-[6rem] md:w-[24rem] md:h-[8rem] relative">
+            <Image src="/home/tribute-font.png" alt="Tribute" fill className="object-contain" priority />
           </div>
         </div>
 
@@ -128,8 +127,8 @@ export default function TributePage() {
                         w-full md:w-auto  md:mt-0">
 
           {/* Mayabini title image */}
-          <div className=" relative h-[100px] sm:h-[100px] md:h-[210px]
-                          w-[220px] sm:w-[280px] md:w-[320px] mt-2 md:mt-13">
+          <div className=" relative h-[100px] sm:h-[100px] md:h-[270px]
+                          w-[220px] sm:w-[280px] md:w-[360px] mt-2 md:mt-13">
             <Image
               src="/home/mayabini.png"
               alt="মায়াবিনী"
@@ -138,10 +137,10 @@ export default function TributePage() {
             />
           </div>
 
-  
+
 
           {/* WAVEFORM + PLAYER CARD */}
-        
+
           <div className="hidden md:flex md:mt-3 md:w-[280px]
                           bg-transparent backdrop-blur-sm  border border-[#d9a09a]
                           rounded-2xl shadow-lg px-3 pt-3 pb-2 flex-col items-center gap-2">
@@ -155,13 +154,13 @@ export default function TributePage() {
             <div className="flex items-center justify-center gap-3">
               <button onClick={() => { if (audioRef.current) audioRef.current.currentTime = 0; }}
                 aria-label="Restart" className="text-[#6B1A1A] hover:text-[#8B2525] transition-colors">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" /></svg>
               </button>
 
               <button onClick={() => skipBy(-10)} aria-label="Back 10s"
                 className="text-[#6B1A1A] hover:text-[#8B2525] transition-colors">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                  <path d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                  <path d="M11.99 5V1l-5 5 5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6h-2c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
                 </svg>
               </button>
 
@@ -182,18 +181,18 @@ export default function TributePage() {
               <button onClick={() => skipBy(10)} aria-label="Forward 10s"
                 className="text-[#6B1A1A] hover:text-[#8B2525] transition-colors">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                  <path d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"/>
+                  <path d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z" />
                 </svg>
               </button>
 
               <button onClick={() => { if (audioRef.current) audioRef.current.loop = !audioRef.current.loop; }}
                 aria-label="Toggle repeat" className="text-[#6B1A1A] hover:text-[#8B2525] transition-colors">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                  <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+                  <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z" />
                 </svg>
               </button>
             </div>
-         
+
           </div>
         </div>
       </div>
