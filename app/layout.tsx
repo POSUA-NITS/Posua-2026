@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import { SongProvider } from "@/components/providers/song-context";
+import SongToggleButton from "@/components/SongToggleButton";
 import "./globals.css";
 // import Navbar from "@/components/Navbar";
 
@@ -46,7 +48,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${moglan.variable} ${avita.variable} antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <SongProvider>
+          {children}
+          <SongToggleButton />
+        </SongProvider>
       </body>
     </html>
   );

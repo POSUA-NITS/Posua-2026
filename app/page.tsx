@@ -1,8 +1,10 @@
 "use client";
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useSong } from "@/components/providers/song-context";
 
 const Landing = () => {
+  const { startSong } = useSong();
   // 1. Refs for moving layers (Removed flowers from here)=
   const mountainRef = useRef(null);
   const sunRef = useRef(null);
@@ -12,6 +14,7 @@ const Landing = () => {
   const landingRef = useRef(null);
   const aboutRef = useRef(null);
   const landingToAbout = () => {
+    startSong();
     const tl = gsap.timeline();
 
     tl.to(landingRef.current, {
