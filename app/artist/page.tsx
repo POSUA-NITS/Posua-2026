@@ -8,11 +8,15 @@ export default function ArtistPage() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    const handleResize = () => {
+    // FIX: Group initial state assignments into a helper function
+    const initPage = () => {
+      setMounted(true);
       setIsMobile(window.innerWidth <= 768);
     };
-    handleResize();
+    
+    initPage(); // Call it once on mount
+
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
