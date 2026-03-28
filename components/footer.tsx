@@ -63,7 +63,7 @@ const Footer = () => {
                     Facebook
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="https://x.com"
                     target="_blank"
@@ -71,7 +71,7 @@ const Footer = () => {
                   >
                     X
                   </Link>
-                </li>
+                </li> */}
               </ul>
 
               {/* Address */}
@@ -85,16 +85,16 @@ const Footer = () => {
               <div className="space-y-4 md:space-y-3">
                 <div>
                   <h2 className="font-bold text-sm md:text-base text-[#6B2C2C]">
-                    John Doe
+                    Manabjyoti Das
                   </h2>
                   <a
-                    href="tel:+919897589326"
+                    href="tel:+917086307948"
                     className="text-xs md:text-sm text-[#CB2229] font-semibold hover:underline"
                   >
-                    +91 98975 89326
+                    +91 70863 07948
                   </a>
                 </div>
-                <div>
+                {/* <div>
                   <h2 className="font-bold text-sm md:text-base text-[#6B2C2C]">
                     Lisa Williams
                   </h2>
@@ -104,7 +104,7 @@ const Footer = () => {
                   >
                     +91 98765 43210
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
 

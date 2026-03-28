@@ -5,6 +5,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useR
 type SongContextValue = {
   startSong: () => void;
   toggleSong: () => void;
+  pauseSong: () => void;
   isPlaying: boolean;
 };
 
@@ -13,6 +14,7 @@ const SongContext = createContext<SongContextValue | undefined>(undefined);
 const SONG_SRC = "/song.mpeg";
 const SONG_START_TIME_SECONDS = 17;
 const SONG_STATE_KEY = "posua_song_state";
+export const GLOBAL_SONG_PLAY_EVENT = "posua:global-song-play";
 
 type PersistedSongState = {
   currentTime: number;
@@ -66,6 +68,14 @@ function saveSongState(state: PersistedSongState) {
   }
 
   window.sessionStorage.setItem(SONG_STATE_KEY, JSON.stringify(state));
+}
+
+function notifyGlobalSongPlay() {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.dispatchEvent(new Event(GLOBAL_SONG_PLAY_EVENT));
 }
 
 export function SongProvider({ children }: { children: React.ReactNode }) {
@@ -162,6 +172,7 @@ export function SongProvider({ children }: { children: React.ReactNode }) {
     }
 
     void audio.play().then(() => {
+      notifyGlobalSongPlay();
       setIsPlaying(true);
       saveSongState({
         currentTime: audio.currentTime,
@@ -189,6 +200,7 @@ export function SongProvider({ children }: { children: React.ReactNode }) {
       void audio
         .play()
         .then(() => {
+          notifyGlobalSongPlay();
           setIsPlaying(true);
           saveSongState({
             currentTime: audio.currentTime,
@@ -210,13 +222,32 @@ export function SongProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
+  const pauseSong = useCallback(() => {
+    const audio = audioRef.current;
+
+    if (!audio) {
+      return;
+    }
+
+    if (!audio.paused) {
+      audio.pause();
+    }
+
+    saveSongState({
+      currentTime: audio.currentTime,
+      isPlaying: false,
+      hasStarted: sharedHasStarted,
+    });
+  }, []);
+
   const value = useMemo(
     () => ({
       startSong,
       toggleSong,
+      pauseSong,
       isPlaying,
     }),
-    [isPlaying, startSong, toggleSong]
+    [isPlaying, pauseSong, startSong, toggleSong]
   );
 
   return <SongContext.Provider value={value}>{children}</SongContext.Provider>;

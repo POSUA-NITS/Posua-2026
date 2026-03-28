@@ -11,29 +11,16 @@ const ArtistDesktop = () => {
     { id: 5, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607398/PaponMahanta_hg0shr.webp", alt: "Angaraag Mahanta", tit: "Singer" },
   ];
 
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [isPopupOpen2, setIsPopupOpen2] = useState(false);
-
   const [popupClass, setPopupClass] = useState("translate-x-full");
   const [popupClass2, setPopupClass2] = useState("translate-x-full");
 
-  const openPopup = () => {
-    setIsPopupOpen(true);
-    setTimeout(() => {
-      setPopupClass("translate-x-0");
-    }, 10);
-  };
-
   const closePopup = () => {
     setPopupClass("translate-x-full");
-    setTimeout(() => {
-      setIsPopupOpen(false);
-    }, 500);
   };
 
   return (
-    <div className=" bg-[#ffffff]  overflow-x-hidden flex flex-col no-scrollbar min-h-screen">
-      <div className="w-full flex-grow flex flex-col items-center justify-center relative">
+    <div className=" bg-[#ffffff] overflow-y-hidden overflow-x-hidden flex flex-col no-scrollbar min-h-screen relative top-0 left-0">
+      <div className="w-full flex-grow flex flex-col items-center justify-center relative top-0 left-0">
         {/* Fixed Background Images */}
 
 
@@ -49,53 +36,14 @@ const ArtistDesktop = () => {
           <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium text-[#cb2229] text-center font-moglan">UPCOMING ARTISTS</p>
         </div>
 
-        {/* Artist Wrapper Grid */}
-        <div className="w-full h-[16rem] flex justify-center items-center mt-[5rem] gap-8 flex-col lg:flex-row">
-          <div className="absolute bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png')] bg-contain bg-right  bg-no-repeat w-full max-w-[100%] h-[42.575rem] top-[4rem] right-0 filter brightness-80 opacity-20 z-10 pointer-events-none"></div>
-          <div className="absolute bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png')] bg-contain bg-left bg-no-repeat w-full max-w-[100%] h-[42.575rem] top-[4rem] left-0  filter brightness-80 opacity-20 z-10 pointer-events-none"></div>
-          {/* Artist 1 */}
-          <div className="w-[45rem] h-[16rem] flex justify-center items-start transition-transform duration-300 cursor-pointer group scale-75 lg:scale-100 xl:scale-100 hover:scale-90 lg:hover:scale-110" onClick={openPopup}>
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top -rotate-45 mix-blend-multiply -z-10 opacity-0 group-hover:opacity-100 transition-opacity" alt='leftMusic' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -mr-[0.5rem] object-cover object-top transition-all duration-300 group-hover:-mr-[1rem] group-hover:scale-105 group-hover:rotate-[30deg]" alt='LeftPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className="mt-[2rem] inline-block w-[8rem] h-[16rem] -ml-[2rem] -mr-[2rem] object-fill object-center scale-150" alt='LeftDhol' />
-
-            <div className="w-[12rem] h-[16rem] bg-[#b02227] bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg')] bg-[length:100%_100%] z-20 scale-125 rounded-lg flex flex-col justify-end items-center transition-transform duration-300">
-              <img src='https://res.cloudinary.com/dp4sknsba/image/upload/v1773251606/0c06a19334af7de38a40496e01092e71df322348_g0ympi.jpg' className="inline-block w-[11rem] h-[13rem] object-cover object-center pt-[0.7rem] rounded-lg" alt='Zubeen Garg' />
-              <div className="w-[12rem] h-[3rem] z-30 text-[#c35d5a] bg-[url('https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp')] bg-[length:100%_100%] flex flex-col items-center justify-center">
-                <p className='text-[#b02227] font-semibold text-sm'>Zubeen Garg</p>
-                <div className='border-[#b02227] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[60%]' />
-                <p className='text-[10px] text-[#b02227] font-semibold'>Singer</p>
-              </div>
-            </div>
-
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className="-mr-[2rem] -ml-[2rem] inline-block w-[8rem] h-[20rem] object-fill object-center scale-150 z-10" alt='RightDhol' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -ml-[0.5rem] object-cover object-top transition-all duration-300 group-hover:-ml-[1rem] group-hover:scale-105 group-hover:-rotate-[30deg]" alt='RightPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top rotate-45 mix-blend-multiply -z-10 opacity-0 group-hover:opacity-100 transition-opacity" alt='rightMusic' />
-          </div>
-
-          {/* Artist 2*/}
-          <div className="w-[45rem] h-[16rem] flex justify-center items-start transition-transform duration-300 cursor-pointer group scale-75 lg:scale-100 xl:scale-100 hover:scale-90 lg:hover:scale-110" onClick={() => {
-            setIsPopupOpen2(true);
-            setTimeout(() => {
-              setPopupClass2("translate-x-0");
-            }, 10);
-          }}>
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top -rotate-45 mix-blend-multiply -z-10 opacity-0 group-hover:opacity-100 transition-opacity" alt='leftMusic' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -mr-[0.5rem] object-cover object-top transition-all duration-300 group-hover:-mr-[1rem] group-hover:scale-105 group-hover:rotate-[30deg]" alt='LeftPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className="mt-[2rem] inline-block w-[8rem] h-[16rem] -ml-[2rem] -mr-[2rem] object-fill object-center scale-150" alt='LeftDhol' />
-
-            <div className="w-[12rem] h-[16rem] bg-[#b02227] bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg')] bg-[length:100%_100%] z-20 scale-125 rounded-lg flex flex-col justify-end items-center transition-transform duration-300">
-              <img src='https://res.cloudinary.com/dp4sknsba/image/upload/v1773251606/0c06a19334af7de38a40496e01092e71df322348_g0ympi.jpg' className="inline-block w-[11rem] h-[13rem] object-cover object-center pt-[0.7rem] rounded-lg" alt='Patkai band' />
-              <div className="w-[12rem] h-[3rem] z-30 text-[#c35d5a] bg-[url('https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp')] bg-[length:100%_100%] flex flex-col items-center justify-center">
-                <p className='text-[#b02227] font-semibold text-sm'>Zubeen Garg</p>
-                <div className='border-[#b02227] border-t-2 border-dashed h-[0.8px] tablet:h-[1.5px] w-[60%]' />
-                <p className='text-[10px] text-[#b02227] font-semibold'>Band</p>
-              </div>
-            </div>
-
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className="-mr-[2rem] -ml-[2rem] inline-block w-[8rem] h-[20rem] object-fill object-center scale-150 z-10" alt='RightDhol' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -ml-[0.5rem] object-cover object-top transition-all duration-300 group-hover:-ml-[1rem] group-hover:scale-105 group-hover:-rotate-[30deg]" alt='RightPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top rotate-45 mix-blend-multiply -z-10 opacity-0 group-hover:opacity-100 transition-opacity" alt='rightMusic' />
+        {/* Upcoming Artists Placeholder */}
+        <div className="w-full mt-[4rem] mb-[2rem] flex justify-center items-center relative">
+          <div className="absolute bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png')] bg-contain bg-right  bg-no-repeat w-full max-w-[100%] h-[42.575rem] top-[-6rem] right-0 filter brightness-80 opacity-20 z-10 pointer-events-none"></div>
+          <div className="absolute bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png')] bg-contain bg-left bg-no-repeat w-full max-w-[100%] h-[42.575rem] top-[-6rem] left-0  filter brightness-80 opacity-20 z-10 pointer-events-none"></div>
+          <div className="relative z-20 rounded-2xl border-2 border-[#cb2229]/40 bg-[#fff8ec]/80 px-10 py-10 backdrop-blur-sm shadow-[0_0_40px_rgba(203,34,41,0.18)]">
+            <p className="font-moglan text-center text-4xl lg:text-5xl tracking-[0.14em] text-[#cb2229] animate-pulse">
+              REVEALING SOON
+            </p>
           </div>
         </div>
 
@@ -153,9 +101,6 @@ const ArtistDesktop = () => {
           <div className="w-[70vw] h-max flex flex-row justify-center items-center bg-[#f4e0b9] p-[3rem] z-20 relative border-[12px] border-[#e7bb67]">
             <button className="absolute top-[10px] right-[15px] h-[3rem] w-[3rem] text-[2rem] border-none rounded-full bg-transparent cursor-pointer flex justify-center items-center hover:bg-[#e7bb67]" onClick={() => {
               setPopupClass2("translate-x-full");
-              setTimeout(() => {
-                setIsPopupOpen2(false);
-              }, 500);
             }}>
               &times;
             </button>

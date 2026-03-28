@@ -77,14 +77,14 @@ const Event = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full min-h-screen overflow-x-hidden flex flex-col items-center gap-10"
+      className="w-full min-h-screen overflow-x-hidden overflow-y-hidden flex flex-col items-center gap-10"
     >
       <Hero />
 
       {/* Sections Container */}
       <div
         ref={sectionsRef}
-        className="w-full grid grid-cols-1 gap-10 p-10 relative"
+        className="w-full h-auto grid grid-cols-1 gap-10 p-10 relative"
         style={{
           backgroundImage: "url('/assets/images/event_section/bg.png')",
           backgroundSize: "contain",

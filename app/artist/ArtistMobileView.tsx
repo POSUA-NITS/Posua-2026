@@ -3,31 +3,15 @@ import React, { useState } from "react";
 import Carousel from '../../components/Carousel';
 
 const ArtistMobileView = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [isPopupOpen2, setIsPopupOpen2] = useState(false);
-
   const [popupClass, setPopupClass] = useState("translate-x-full");
   const [popupClass2, setPopupClass2] = useState("translate-x-full");
 
-  const openPopup = () => {
-    setIsPopupOpen(true);
-    setTimeout(() => {
-      setPopupClass("translate-x-0");
-    }, 10);
-  };
-
   const closePopup = () => {
     setPopupClass("translate-x-full");
-    setTimeout(() => {
-      setIsPopupOpen(false);
-    }, 500);
   };
 
   const closePopup2 = () => {
     setPopupClass2("translate-x-full");
-    setTimeout(() => {
-      setIsPopupOpen2(false);
-    }, 500);
   };
 
   const images1 = [
@@ -65,51 +49,12 @@ const ArtistMobileView = () => {
           </p>
         </div>
 
-        {/* Artist Wrapper Grid EXACTLY LIKE DESKTOP BUT SCALED FOR MOBILE */}
-        <div className="w-full flex-col flex justify-center items-center mt-[2rem] gap-[1rem]">
-          {/* Artist 1 */}
-          <div className="w-[45rem] h-[16rem] flex justify-center items-start transition-transform duration-300 cursor-pointer group scale-[0.45] sm:scale-[0.55] hover:scale-[0.48]" onClick={openPopup}>
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top -rotate-45 mix-blend-multiply -z-10 opacity-100 transition-opacity" alt='leftMusic' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -mr-[0.5rem] object-cover object-top transition-all duration-300" alt='LeftPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className="mt-[2rem] inline-block w-[8rem] h-[16rem] -ml-[2rem] -mr-[2rem] object-fill object-center scale-150" alt='LeftDhol' />
-
-            <div className="w-[12rem] h-[16rem] bg-[#b02227] bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg')] bg-[length:100%_100%] z-20 scale-125 rounded-lg flex flex-col justify-end items-center transition-transform duration-300">
-              <img src='https://res.cloudinary.com/dp4sknsba/image/upload/v1773251606/0c06a19334af7de38a40496e01092e71df322348_g0ympi.webp' className="inline-block w-[11rem] h-[13rem] object-cover object-center pt-[0.7rem] rounded-lg" alt='Zubeen Garg' />
-              <div className="w-[12rem] h-[3rem] z-30 text-[#c35d5a] bg-[url('https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp')] bg-[length:100%_100%] flex flex-col items-center justify-center">
-                <p className='text-[#b02227] font-semibold text-sm'>Zubeen Garg</p>
-                <div className='border-[#b02227] border-t-2 border-dashed h-[0.8px] w-[60%]' />
-                <p className='text-[10px] text-[#b02227] font-semibold'>Singer</p>
-              </div>
-            </div>
-
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className="-mr-[2rem] -ml-[2rem] inline-block w-[8rem] h-[20rem] object-fill object-center scale-150 z-10" alt='RightDhol' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -ml-[0.5rem] object-cover object-top transition-all duration-300" alt='RightPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top rotate-45 mix-blend-multiply -z-10 opacity-100 transition-opacity" alt='rightMusic' />
-          </div>
-
-          {/* Artist 2 */}
-          <div className="w-[45rem] h-[16rem] flex justify-center items-start transition-transform duration-300 cursor-pointer group scale-[0.45] sm:scale-[0.55] hover:scale-[0.48] mb-[2rem]" onClick={() => {
-            setIsPopupOpen2(true);
-            setTimeout(() => {
-              setPopupClass2("translate-x-0");
-            }, 10);
-          }}>
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top -rotate-45 mix-blend-multiply -z-10 opacity-100 transition-opacity" alt='leftMusic' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914466/papLeft_esh2ke.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -mr-[0.5rem] object-cover object-top transition-all duration-300" alt='LeftPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914464/LeftDhol_mqch8f.svg' className="mt-[2rem] inline-block w-[8rem] h-[16rem] -ml-[2rem] -mr-[2rem] object-fill object-center scale-150" alt='LeftDhol' />
-
-            <div className="w-[12rem] h-[16rem] bg-[#b02227] bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742914160/bgSvg_mzeadi.svg')] bg-[length:100%_100%] z-20 scale-125 rounded-lg flex flex-col justify-end items-center transition-transform duration-300">
-              <img src='https://res.cloudinary.com/dp4sknsba/image/upload/v1773251606/0c06a19334af7de38a40496e01092e71df322348_g0ympi.webp' className="inline-block w-[11rem] h-[13rem] object-cover object-center pt-[0.7rem] rounded-lg" alt='Patkai band' />
-              <div className="w-[12rem] h-[3rem] z-30 text-[#c35d5a] bg-[url('https://res.cloudinary.com/dmezugavw/image/upload/v1743686989/textFrame-Picsart-BackgroundRemover-removebg-preview_foo4lb.webp')] bg-[length:100%_100%] flex flex-col items-center justify-center">
-                <p className='text-[#b02227] font-semibold text-sm'>Zubeen Garg</p>
-                <div className='border-[#b02227] border-t-2 border-dashed h-[0.8px] w-[60%]' />
-                <p className='text-[10px] text-[#b02227] font-semibold'>Band</p>
-              </div>
-            </div>
-
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914468/RightDhol_wvr36b.svg' className="-mr-[2rem] -ml-[2rem] inline-block w-[8rem] h-[20rem] object-fill object-center scale-150 z-10" alt='RightDhol' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742914467/papRight_vdsite.svg' className="inline-block mt-[1.05rem] w-[6rem] h-[6rem] -ml-[0.5rem] object-cover object-top transition-all duration-300" alt='RightPepa' />
-            <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top rotate-45 mix-blend-multiply -z-10 opacity-100 transition-opacity" alt='rightMusic' />
+        {/* Upcoming Artists Placeholder */}
+        <div className="w-full flex justify-center items-center mt-[2rem] mb-[2rem] px-4 relative z-20">
+          <div className="rounded-2xl border-2 border-[#cb2229]/40 bg-[#fff8ec]/85 px-6 py-8 shadow-[0_0_24px_rgba(203,34,41,0.18)] backdrop-blur-sm">
+            <p className="font-moglan text-center text-3xl sm:text-4xl tracking-[0.12em] text-[#cb2229] animate-pulse">
+              REVEALING SOON
+            </p>
           </div>
         </div>
 

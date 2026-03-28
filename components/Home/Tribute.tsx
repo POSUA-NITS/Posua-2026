@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { GLOBAL_SONG_PLAY_EVENT, useSong } from "@/components/providers/song-context";
 
 const LYRICS = [
   "মায়াবিনী ৰাতিৰ বুকুত",
@@ -15,6 +16,7 @@ const WAVE_BARS = [6, 10, 18, 26, 34, 40, 44, 40, 34, 26, 18, 10, 6, 10, 18,
   38, 28, 18, 10, 6];
 
 export default function TributePage() {
+  const { pauseSong } = useSong();
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -24,8 +26,18 @@ export default function TributePage() {
   const togglePlay = () => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (isPlaying) { audio.pause(); } else { audio.play(); }
-    setIsPlaying(!isPlaying);
+    if (isPlaying) {
+      audio.pause();
+      setIsPlaying(false);
+      return;
+    }
+
+    pauseSong();
+    void audio.play().then(() => {
+      setIsPlaying(true);
+    }).catch(() => {
+      setIsPlaying(false);
+    });
   };
 
   const handleTimeUpdate = () => {
@@ -56,9 +68,28 @@ export default function TributePage() {
 
   const filledBars = Math.round((progress / 100) * WAVE_BARS.length);
 
+  useEffect(() => {
+    const handleGlobalSongPlay = () => {
+      const tributeAudio = audioRef.current;
+      if (!tributeAudio) {
+        return;
+      }
+
+      if (!tributeAudio.paused) {
+        tributeAudio.pause();
+      }
+      setIsPlaying(false);
+    };
+
+    window.addEventListener(GLOBAL_SONG_PLAY_EVENT, handleGlobalSongPlay);
+    return () => {
+      window.removeEventListener(GLOBAL_SONG_PLAY_EVENT, handleGlobalSongPlay);
+    };
+  }, []);
+
   return (
     <section className="relative w-full overflow-hidden flex items-center justify-center
-                        min-h-[420px] md:h-[600px]">
+                        min-h-[520px] md:min-h-[640px] lg:h-[600px]">
 
       <audio
         ref={audioRef}
@@ -122,12 +153,12 @@ export default function TributePage() {
         {/* RIGHT SIDE PANEL
             Mobile: centred below header, above artist overlap
             Desktop: absolute right side */}
-        <div className="left-[4%]  bottom-[0%] relative md:absolute md:left-[70%] md:top-[5%] z-30
+        <div className="left-[4%]  bottom-[0%] relative lg:absolute lg:left-[70%] lg:top-[5%] z-30
                         flex flex-col items-center md:items-center
-                        w-full md:w-auto  md:mt-0">
+                        w-full lg:w-auto mt-4 md:mt-6 lg:mt-0">
 
           {/* Mayabini title image */}
-          <div className=" relative h-[100px] sm:h-[100px] md:h-[270px]
+          <div className=" relative h-[100px] sm:h-[100px] md:h-[180px] lg:h-[270px]
                           w-[220px] sm:w-[280px] md:w-[360px] mt-2 md:mt-13">
             <Image
               src="/home/mayabini.png"
@@ -141,8 +172,8 @@ export default function TributePage() {
 
           {/* WAVEFORM + PLAYER CARD */}
 
-          <div className="hidden md:flex md:mt-3 md:w-[280px]
-                          bg-transparent backdrop-blur-sm  border border-[#d9a09a]
+          <div className="flex mt-3 w-[92%] max-w-[340px] md:max-w-[360px] lg:w-[280px]
+                          bg-transparent backdrop-blur-sm border border-[#d9a09a]
                           rounded-2xl shadow-lg px-3 pt-3 pb-2 flex-col items-center gap-2">
             {/* Time labels */}
             <div className="flex justify-between w-full">
@@ -151,7 +182,7 @@ export default function TributePage() {
             </div>
 
             {/* Controls */}
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex flex-wrap items-center justify-center gap-3">
               <button onClick={() => { if (audioRef.current) audioRef.current.currentTime = 0; }}
                 aria-label="Restart" className="text-[#6B1A1A] hover:text-[#8B2525] transition-colors">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" /></svg>
