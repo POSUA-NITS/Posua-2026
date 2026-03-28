@@ -1,7 +1,12 @@
-import GalleryGrid from "@/components/gallery/GalleryGrid"
-import GalleryFilter from "@/components/gallery/GalleryFilter"
+"use client";
+
+import { useState } from "react";
+import GalleryGrid from "@/components/gallery/GalleryGrid";
+import GalleryFilter from "@/components/gallery/GalleryFilter";
 
 export default function GalleryPage() {
+  const [activeYear, setActiveYear] = useState("2024");
+
   return (
     <main
       className="
@@ -12,7 +17,6 @@ export default function GalleryPage() {
       bg-no-repeat
       "
     >
-
       <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 pt-24 sm:pt-20 lg:pt-24 pb-12 sm:pb-14 lg:pb-16">
 
         <h1
@@ -22,12 +26,14 @@ export default function GalleryPage() {
           Photo Gallery
         </h1>
 
-        <GalleryGrid />
+        <GalleryGrid activeYear={activeYear} />
 
-        <GalleryFilter />
+        <GalleryFilter
+          activeYear={activeYear}
+          setActiveYear={setActiveYear}
+        />
 
       </div>
-
     </main>
-  )
+  );
 }

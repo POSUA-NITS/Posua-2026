@@ -1,8 +1,23 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import GalleryCard from "./GalleryCard";
+import data from "./images.json";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-const GalleryGrid = () => {
+interface Props {
+  activeYear: string;
+}
+
+const GalleryGrid = ({ activeYear }: Props) => {
+  const rawImages =
+    activeYear === "2024"
+      ? data.images1
+      : activeYear === "2023"
+      ? data.images2
+      : data.images3;
+
+  const images = rawImages.slice(0, 9);
+
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -21,46 +36,80 @@ const GalleryGrid = () => {
   const handleEnter = (index: number) => {
     if (expandedIndex === index) return;
 
-    setHoveredIndex(index);
-
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
-
-    setExpandedIndex(null);
 
     timeoutRef.current = setTimeout(() => {
       setExpandedIndex(index);
-    }, 180);
+    }, 120); 
   };
 
   const handleLeave = () => {
-    setHoveredIndex(null);
-
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
 
-    setExpandedIndex(null);
+    timeoutRef.current = setTimeout(() => {
+      setExpandedIndex(null);
+    }, 120);
   };
 
   const handleClick = (index: number) => {
+    const highRes = images[index]?.url
+      ?.replace("w_400", "w_800")
+      .replace("q_auto", "q_auto:good");
+
+    const img = new Image();
+    img.src = highRes;
+
     setSelectedIndex(index);
   };
+
+  const handleNext = () => {
+    if (selectedIndex === null) return;
+    setSelectedIndex((prev) => (prev! + 1) % images.length);
+  };
+
+  const handlePrev = () => {
+    if (selectedIndex === null) return;
+    setSelectedIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev! - 1
+    );
+  };
+
+  useEffect(() => {
+  const handleKey = (e: KeyboardEvent) => {
+    if (selectedIndex === null) return;
+
+    if (e.key === "ArrowRight") handleNext();
+    if (e.key === "ArrowLeft") handlePrev();
+    if (e.key === "Escape") setSelectedIndex(null);
+  };
+
+  window.addEventListener("keydown", handleKey);
+
+  return () => {
+    window.removeEventListener("keydown", handleKey);
+  };
+}, [selectedIndex]);
+
 
   return (
     <>
       <div className="flex items-center justify-center pt-4 sm:pt-5 lg:pt-6 pb-1 sm:pb-2 mt-6 sm:mt-8 lg:mt-10">
         <div
-          className="flex flex-col gap-2 sm:gap-3 lg:gap-4 w-full max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl aspect-square transition-transform duration-[950ms]"
+          className="flex flex-col gap-2 sm:gap-3 lg:gap-4 w-full max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl aspect-square transition-transform duration-[900ms] transform-gpu"
           style={{
             transform: expandedIndex !== null ? "scale(1.05)" : "scale(1)",
             transitionTimingFunction: easing,
+            willChange: "transform",
           }}
         >
           {[0, 1, 2].map((rowIndex) => (
             <div
               key={rowIndex}
-              className="flex flex-row gap-2 sm:gap-3 lg:gap-4 transition-all duration-[900ms]"
+              className="flex flex-row gap-2 sm:gap-3 lg:gap-4 transition-[flex] duration-[900ms]"
               style={{
                 flex: activePos?.row === rowIndex ? 1.6 : 1,
                 transitionTimingFunction: easing,
+                willChange: "flex",
               }}
             >
               {[0, 1, 2].map((colIndex) => {
@@ -73,13 +122,14 @@ const GalleryGrid = () => {
                     onMouseEnter={() => handleEnter(index)}
                     onMouseLeave={handleLeave}
                     onClick={() => handleClick(index)}
-                    className="transition-all duration-[900ms] h-full will-change-[flex,transform]"
+                    className="h-full transition-[flex,transform] duration-[900ms] transform-gpu"
                     style={{
                       flex: isActiveColumn ? 1.6 : 1,
                       transitionTimingFunction: easing,
+                      willChange: "flex, transform",
                     }}
                   >
-                    <GalleryCard />
+                    <GalleryCard image={images[index]?.url} />
                   </div>
                 );
               })}
@@ -94,11 +144,67 @@ const GalleryGrid = () => {
           className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
           onClick={() => setSelectedIndex(null)}
         >
+          {/* Close */}
+          <button
+            onClick={() => setSelectedIndex(null)}
+            className="absolute top-6 right-6 text-white text-3xl z-50 hover:scale-110 transition"
+          >
+            <X size={28} />
+          </button>
+
+          {/* ⬅️ Prev */}
+          <button
+            onClick={(e) => {
+            e.stopPropagation();
+            handlePrev();
+            }}
+            className="
+              absolute left-4 sm:left-6 lg:left-[calc(50%-380px)]
+              w-10 h-10 flex items-center justify-center
+              rounded-full
+              bg-white/20 backdrop-blur-md
+              text-white
+              shadow-md
+              hover:bg-white/40 hover:scale-110
+              transition
+              z-50
+            "
+          >
+            <ChevronLeft size={22} />
+          </button>
+
+          {/* ➡️ Next */}
+          <button
+            onClick={(e) => {
+            e.stopPropagation();
+            handleNext();
+            }}
+            className="
+              absolute right-4 sm:right-6 lg:right-[calc(50%-380px)]
+              w-10 h-10 flex items-center justify-center
+              rounded-full
+             bg-white/20 backdrop-blur-md
+             text-white
+             shadow-md
+             hover:bg-white/40 hover:scale-110
+             transition
+            z-50
+            "
+          >
+            <ChevronRight size={22} />
+          </button>
+
+
           <div
             className="w-[92vw] max-w-2xl aspect-square cursor-default"
             onClick={(e) => e.stopPropagation()}
           >
-            <GalleryCard expanded />
+            <GalleryCard
+              expanded
+              image={images[selectedIndex]?.url
+                ?.replace("w_400", "w_800")
+                .replace("q_auto", "q_auto:good")}
+            />
           </div>
         </div>
       )}

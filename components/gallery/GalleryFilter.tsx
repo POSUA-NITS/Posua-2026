@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+interface Props {
+  activeYear: string;
+  setActiveYear: (year: string) => void;
+}
 
-export default function GalleryFilter() {
-  const years = ["2020", "2021", "2022"];
-  const [activeYear, setActiveYear] = useState("2021");
+export default function GalleryFilter({ activeYear, setActiveYear }: Props) {
+  const years = ["2024", "2023", "2022"];
 
   return (
     <div className="flex justify-center mt-6 sm:mt-7 lg:mt-8 mb-1">
