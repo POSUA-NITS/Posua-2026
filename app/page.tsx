@@ -2,9 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useSong } from "@/components/providers/song-context";
+import { useRouter } from "next/navigation";
 
 const Landing = () => {
   const { startSong } = useSong();
+  const router = useRouter();
   // 1. Refs for moving layers (Removed flowers from here)=
   const mountainRef = useRef(null);
   const sunRef = useRef(null);
@@ -224,7 +226,7 @@ const Landing = () => {
                   <button onClick={aboutToLanding} className="bg-[#FF6B6B] cursor-pointer text-[#ffffff] text-sm py-2 px-4 rounded-md hover:bg-[#ff5252] transition-colors duration-300">
                     Go back
                   </button>
-                  <button className="bg-[#FF6B6B] cursor-pointer text-[#ffffff] text-sm py-2 px-4 rounded-md hover:bg-[#ff5252] transition-colors duration-300">
+                  <button onClick={() => router.push("/home")} className="bg-[#FF6B6B] cursor-pointer text-[#ffffff] text-sm py-2 px-4 rounded-md hover:bg-[#ff5252] transition-colors duration-300">
                     View More
                   </button>
                 </div>
