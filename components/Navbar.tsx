@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -9,10 +10,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/home" },
     { name: "Gallery", path: "/gallery" },
     { name: "Events", path: "/events" },
-    { name: "Team", path: "/team" },
+    // { name: "Team", path: "/team" },
     // { name: "Sponsors", path: "/sponsors" },
     { name: "Artist", path: "/artist" },
   ];
@@ -21,11 +22,16 @@ const Navbar = () => {
     <nav className="w-full absolute top-0 left-0 z-50">
       <div className="max-w-[1150px] mx-auto flex items-center justify-between px-6 py-4 font-gotham">
         {/* Logo */}
-        <img
-          src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930432/posualoader_1_oj6wp8.png"
-          alt="Posua Logo"
-          className="h-16 w-auto"
-        />
+        <Link href="/" aria-label="Go to landing page" className="shrink-0">
+          <Image
+            src="/logoposua.png"
+            alt="Posua Logo"
+            width={180}
+            height={90}
+            priority
+            className="h-12 w-auto sm:h-14 md:h-16"
+          />
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-[18px] text-[#6b1c1c]">

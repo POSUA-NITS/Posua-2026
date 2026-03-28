@@ -49,7 +49,7 @@ export default function InvitationSection() {
         {/* Main Invitation Card */}
         <div className="relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[7/9] mt-4 shadow-xl">
           <Image
-            src="/home/invitation-card.png"
+            src="/invitation.png"
             alt="Invitation Card"
             fill
             className="object-contain"
