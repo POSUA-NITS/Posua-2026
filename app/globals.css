@@ -11,9 +11,20 @@
   font-family: 'Alex Brush', cursive;
 }
 
+.font-cutefairy{
+  font-family: "CuteFairy", cursive;
+}
+
 @font-face {
   font-family: "MoglanDemo";
   src: url("/fonts/Moglan_DEMO.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CuteFairy";
+  src:url("/fonts/cute-fairy.regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
