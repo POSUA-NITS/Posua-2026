@@ -6,8 +6,7 @@ import SongToggleButton from "@/components/SongToggleButton";
 import PreLoader from "@/components/PreLoader";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-// import Footer from "../components/footer";
+import Footer from "@/components/footer";
 const moglan = localFont({
   src: "../public/fonts/Moglan_DEMO.ttf",
   variable: "--font-moglan",
@@ -53,10 +52,12 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <SongProvider>
+          <Navbar />
           <PreLoader>
             {children}
             <SongToggleButton />
           </PreLoader>
+          <Footer />
         </SongProvider>
       </body>
     </html>
