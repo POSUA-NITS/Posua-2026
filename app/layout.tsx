@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
+import { SongProvider } from "@/components/providers/song-context";
+import SongToggleButton from "@/components/SongToggleButton";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 const moglan = localFont({
   src: "../public/fonts/Moglan_DEMO.ttf",
   variable: "--font-moglan",
@@ -36,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -44,10 +46,12 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${moglan.variable} ${avita.variable} antialiased`}
+        suppressHydrationWarning
       >
-        <Navbar/>
-        {children}
-        <Footer />
+        <SongProvider>
+          {children}
+          <SongToggleButton />
+        </SongProvider>
       </body>
     </html>
   );
