@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import { SongProvider } from "@/components/providers/song-context";
 import SongToggleButton from "@/components/SongToggleButton";
+import PreLoader from "@/components/PreLoader";
 import "./globals.css";
 // import Navbar from "@/components/Navbar";
 
@@ -49,8 +50,10 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <SongProvider>
-          {children}
-          <SongToggleButton />
+          <PreLoader>
+            {children}
+            <SongToggleButton />
+          </PreLoader>
         </SongProvider>
       </body>
     </html>
