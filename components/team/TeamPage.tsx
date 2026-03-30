@@ -193,11 +193,62 @@ export default function TeamPage() {
     role: "Head",
     imageSrc: "",
   });
-  const techTeamData = Array(3).fill({
-    name: "John Doe",
-    role: "Head",
-    imageSrc: "",
-  });
+  const techTeamData = [
+    {
+      name: "Manash Pratim Goswami",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850083/Manash_Pratim_Goswami_-_Manash_Goswami_cgykcj.webp",
+    },
+    {
+      name: "Jitamanyu Phukan",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850092/Jitamanyu_Phukan_la3jiu.webp",
+    },
+    {
+      name: "Subrata Lodh",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850096/Subrata_Lodh_bhbm8u.webp",
+    },
+    {
+      name: "KALLUL GOGOI",
+      role: "Web Member",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850086/myself1_-_Kallul_Gogoi_-_Kallul_Gogoi_ycw58g.webp",
+    },
+    {
+      name: "Nibir Deka",
+      role: "Web Member",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850084/NibirDeka_2_2412007.jpeg_-_Nibir_Deka_la7woq.webp",
+    },
+    {
+      name: "Dishank Choudhury",
+      role: "Web Member",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850082/Dishank_Choudhury_xgs2eo.webp",
+    },
+    {
+      name: "Sivangi Kashyap",
+      role: "Web Member",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850083/Sivangi_Kashyap__Web_-_Sivangi_Kashyap_dsozk6.webp",
+    },
+    {
+      name: "Rahul Kumar",
+      role: "UI/UX Member",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850101/Rahul_Kumar_rl6irt.webp",
+    },
+    {
+      name: "Mayur Kalita",
+      role: "UI/UX Member",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850093/mayur_kalita_jrt7jj.webp",
+    },
+  ];
 
   return (
     <main className="min-h-screen w-full bg-white overflow-x-hidden relative flex flex-col items-center">
