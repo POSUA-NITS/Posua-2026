@@ -195,6 +195,12 @@ export default function TeamPage() {
   });
   const techTeamData = [
     {
+      name: "Barnil Sarma",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774860603/barnil_s2m0ku.webp",
+    },
+    {
       name: "Manash Pratim Goswami",
       role: "Co-Head",
       imageSrc:
