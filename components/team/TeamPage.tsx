@@ -188,11 +188,62 @@ export default function TeamPage() {
     role: "Head",
     imageSrc: "",
   });
-  const coreTeamData = Array(3).fill({
-    name: "John Doe",
-    role: "Head",
-    imageSrc: "",
-  });
+  const coreTeamData = [
+    {
+      name: "Arindom Sarmah",
+      role: "Executive Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952441/ARINDOM_SARMAH_l0ha73.webp",
+    },
+    {
+      name: "Ankur Jyoti Neog",
+      role: "Chief Coordinator",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952449/Ankur_Jyoti_Neog_lryreg.webp",
+    },
+    {
+      name: "Sourav Deka",
+      role: "Executive Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952456/SOURAV_DEKA_dkbj2t.webp",
+    },
+    {
+      name: "Pratyashi Nath",
+      role: "Chief Coordinator",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952434/Pratyashi_Nath_xa5tj4.webp",
+    },
+    {
+      name: "Nilpaban Kalita",
+      role: "Chief Coordinator",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952437/NILPABAN_j2rcy1.webp",
+    },
+    {
+      name: "Manabjyoti Das",
+      role: "Convenor",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952434/MANABJYOTI_DAS_mkl7vy.webp",
+    },
+    {
+      name: "Akash barua",
+      role: "Executive Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/akash.executivehead.posua_-_ME_032_Akash_barua_yx4jai.webp",
+    },
+    {
+      name: "Kaushik Dihingia",
+      role: "Treasurer",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/KAUSHIK_DIHINGIA_zglniy.webp",
+    },
+    {
+      name: "Saurov Jyoti Chutia",
+      role: "Executive Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/Saurov_Jyoti_e0qjkq.webp",
+    },
+  ];
   const techTeamData = [
     {
       name: "Barnil Sarma",
