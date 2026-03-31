@@ -144,13 +144,6 @@ const GalleryGrid = ({ activeYear }: Props) => {
           className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
           onClick={() => setSelectedIndex(null)}
         >
-          {/* Close */}
-          <button
-            onClick={() => setSelectedIndex(null)}
-            className="absolute top-6 right-6 text-white text-3xl z-50 hover:scale-110 transition"
-          >
-            <X size={28} />
-          </button>
 
           {/* ⬅️ Prev */}
           <button
@@ -199,12 +192,31 @@ const GalleryGrid = ({ activeYear }: Props) => {
             className="w-[92vw] max-w-2xl aspect-square cursor-default"
             onClick={(e) => e.stopPropagation()}
           >
-            <GalleryCard
-              expanded
-              image={images[selectedIndex]?.url
+            <div className="relative w-full h-full">
+    
+              <GalleryCard
+                expanded
+                image={images[selectedIndex]?.url
                 ?.replace("w_400", "w_800")
                 .replace("q_auto", "q_auto:good")}
-            />
+              />
+
+              <button
+                onClick={() => setSelectedIndex(null)}
+                className="absolute -top-1 -right-1
+                           w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12
+                           flex items-center justify-center
+                           rounded-full 
+                           bg-black/80
+                           text-white 
+                           border-2 border-white/40
+                           shadow-lg
+                           hover:scale-110 transition z-50"
+              >
+                <X size={20} />
+              </button>
+
+            </div>
           </div>
         </div>
       )}
