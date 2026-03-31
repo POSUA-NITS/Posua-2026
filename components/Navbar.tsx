@@ -3,23 +3,53 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
 
   const navItems = [
     { name: "Home", path: "/home" },
     { name: "Gallery", path: "/gallery" },
     { name: "Events", path: "/events" },
      { name: "Team", path: "/team" },
-     { name: "Sponsors", path: "/sponsors" },
+    //  { name: "Sponsors", path: "/sponsors" },
     { name: "Artist", path: "/artist" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+        setIsScrollingUp(false);
+      } else if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setIsVisible(false);
+        setIsScrollingUp(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+        setIsScrollingUp(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  const stickClass = isVisible ? "translate-y-0" : "-translate-y-full";
+  const blurClass = isScrollingUp ? "backdrop-blur-md bg-white/60 border-b border-white/40 shadow-lg" : "bg-transparent";
+
   return (
-    <nav className="w-full absolute top-0 left-0 z-50">
+    <nav className={`w-full fixed top-0 left-0 z-50 transition-transform duration-300 ${stickClass} ${blurClass}`}>
       <div className="max-w-[1150px] mx-auto flex items-center justify-between px-6 py-4 font-gotham">
         {/* Logo */}
         <Link href="/" aria-label="Go to landing page" className="shrink-0">

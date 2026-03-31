@@ -376,7 +376,7 @@ export default function TeamPage() {
             the barriers among the crowd and bringing everyone together.
           </p>
         </div>
-
+{/* 
         <section className="relative w-full py-4 sm:py-6 z-10 mt-2 sm:mt-10">
           <div className="w-full relative px-4 sm:px-6 md:px-10 flex flex-col items-center justify-center mb-8 sm:mb-20 gap-4 sm:gap-0">
             <div className="flex flex-col sm:flex-row justify-between w-full relative z-10 gap-8 sm:gap-0 max-w-[1150px]">
@@ -399,8 +399,8 @@ export default function TeamPage() {
               <UnionBodyCard name="John Doe" role="Chief Patron" imageSrc="" />
             </div>
           </div>
-        </section>
-
+        </section> */}
+{/* 
         <section className="relative w-full py-4 sm:py-6 z-10">
           <TeamSectionHeader title="Union Body" />
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
@@ -415,7 +415,7 @@ export default function TeamPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="relative w-full py-4 sm:py-6 z-10">
           <TeamSectionHeader title="Core Team" />
