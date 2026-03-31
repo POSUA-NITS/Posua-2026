@@ -47,7 +47,7 @@ export default function TeamMemberCard({ name, role, imageSrc }: TeamMember) {
           />
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4">
             <p
-              className={`text-white text-lg sm:text-2xl md:text-3xl font-serif tracking-wide transition-all duration-500 ease-in-out transform drop-shadow-md text-center ${
+              className={`text-white text-lg sm:text-xl md:text-xl font-serif tracking-wide transition-all duration-500 ease-in-out transform drop-shadow-md text-center ${
                 isTouched
                   ? "-translate-y-3 sm:-translate-y-4"
                   : "group-hover:-translate-y-3 sm:group-hover:-translate-y-4"
