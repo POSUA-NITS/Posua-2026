@@ -11,8 +11,8 @@ type SongContextValue = {
 
 const SongContext = createContext<SongContextValue | undefined>(undefined);
 
-const SONG_SRC = "/song.mpeg";
-const SONG_START_TIME_SECONDS = 17;
+const SONG_SRC = "/BackgroundAudio.mp3";
+const SONG_START_TIME_SECONDS = 0;
 const SONG_STATE_KEY = "posua_song_state";
 export const GLOBAL_SONG_PLAY_EVENT = "posua:global-song-play";
 
