@@ -6,12 +6,12 @@ interface Props {
 }
 
 export default function GalleryFilter({ activeYear, setActiveYear }: Props) {
-  const years = ["2024", "2023", "2022"];
+  const years = ["2025", "2024", "2023", "2022"];
 
   return (
     <div className="flex justify-center mt-6 sm:mt-7 lg:mt-8 mb-1">
       
-      <div className="flex gap-6 sm:gap-10 lg:gap-16 items-center h-[52px] sm:h-[58px] lg:h-[64px]">
+      <div className="flex gap-4 sm:gap-6 lg:gap-10 items-center h-[52px] sm:h-[58px] lg:h-[64px]">
 
         {years.map((year) => {
           const isActive = year === activeYear;
