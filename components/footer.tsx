@@ -87,6 +87,9 @@ const Footer = () => {
                   <h2 className="font-bold text-sm md:text-base text-[#6B2C2C]">
                     Manabjyoti Das
                   </h2>
+                  <h2 className="font-bold text-sm md:text-base text-[#6B2C2C]">
+                   (Convenor)
+                  </h2>
                   <a
                     href="tel:+917086307948"
                     className="text-xs md:text-sm text-[#CB2229] font-semibold hover:underline"
