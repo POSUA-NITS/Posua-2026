@@ -376,32 +376,43 @@ export default function TeamPage() {
             the barriers among the crowd and bringing everyone together.
           </p>
         </div>
-{/* 
+
+        {/* --- UPDATED UNION BODY SECTION --- */}
         <section className="relative w-full py-4 sm:py-6 z-10 mt-2 sm:mt-10">
-          <div className="w-full relative px-4 sm:px-6 md:px-10 flex flex-col items-center justify-center mb-8 sm:mb-20 gap-4 sm:gap-0">
-            <div className="flex flex-col sm:flex-row justify-between w-full relative z-10 gap-8 sm:gap-0 max-w-[1150px]">
-              <div className="w-full sm:w-auto flex justify-start sm:-ml-4 md:-ml-8 transition-transform">
+          <div className="w-full flex justify-center px-4 sm:px-6 md:px-10 mb-8 sm:mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 sm:gap-y-14 md:gap-y-16 gap-x-8 sm:gap-x-16 md:gap-x-24 justify-items-center max-w-[1000px] w-full">
+              <UnionBodyCard
+                name="Prof. Dilip Kumar Baidya"
+                role="CHIEF-PATRON"
+                imageSrc="https://res.cloudinary.com/dhpqjrbha/image/upload/v1743704061/director_catbvj.webp"
+              />
+              <UnionBodyCard
+                name="Prof. Upendra Kumar"
+                role="PATRON"
+                imageSrc="https://res.cloudinary.com/dustrkqlj/image/upload/v1775023981/IMG_1753978356688b95f42dcd1_lif9hh.webp"
+              />
+              <UnionBodyCard
+                name="Prof. Rahul Dev Misra"
+                role="PRESIDENT"
+                imageSrc="https://res.cloudinary.com/dustrkqlj/image/upload/v1775024051/IMG_174134284467cac87c778b1_hcfrgd.webp"
+              />
+              <UnionBodyCard
+                name="Dr Malaya Dutta Borah"
+                role="VICE-PRESIDENT"
+                imageSrc="https://res.cloudinary.com/dmezugavw/image/upload/v1743618531/malaya_fqmdje.webp"
+              />
+              <div className="sm:col-span-2 flex justify-center w-full">
                 <UnionBodyCard
-                  name="John Doe"
-                  role="Chief Patron"
-                  imageSrc=""
+                  name="Dr. Parikshit Saikia"
+                  role="VICE-PRESIDENT"
+                  imageSrc="https://res.cloudinary.com/dustrkqlj/image/upload/v1775024122/IMG_1753450173688386bd8119d_ijfcsx.webp"
                 />
               </div>
-              <div className="w-full sm:w-auto flex justify-end sm:-mr-4 md:-mr-8 transition-transform">
-                <UnionBodyCard
-                  name="John Doe"
-                  role="Chief Patron"
-                  imageSrc=""
-                />
-              </div>
-            </div>
-            <div className="flex justify-center w-full mt-4 sm:-mt-16 md:-mt-24 lg:-mt-32 relative z-20">
-              <UnionBodyCard name="John Doe" role="Chief Patron" imageSrc="" />
             </div>
           </div>
-        </section> */}
-{/* 
-        <section className="relative w-full py-4 sm:py-6 z-10">
+        </section>
+
+        {/* <section className="relative w-full py-4 sm:py-6 z-10">
           <TeamSectionHeader title="Union Body" />
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 justify-items-center max-w-[1150px] w-full">
