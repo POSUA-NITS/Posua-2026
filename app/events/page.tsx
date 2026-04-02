@@ -99,7 +99,7 @@ const Event = () => {
         />
 
         <EventSection
-          image="/assets/images/event_section/manthan.png"
+          image="/assets/images/event_section/rongili.png"
           title="Rongili"
           text="From graceful classical moves to electrifying contemporary beats, watch talented dancers set the stage on fire with passion and artistry. Let the music take over as we celebrate culture, creativity, and the joy of movement!"
           reverse
@@ -116,7 +116,7 @@ const Event = () => {
         />
 
         <EventSection
-          image="/assets/images/event_section/manthan.png"
+          image="/assets/images/event_section/patkai.png"
           title="Patkaair lpare"
           text="Challenge yourself with exciting questions on history, pop culture, science, and more. Compete with the brightest minds, win exciting prizes, and prove you've got what it takes to be the ultimate quiz champion!"
         />
@@ -132,9 +132,20 @@ const Event = () => {
         />
 
         <EventSection
-          image="/assets/images/event_section/manthan.png"
-          title="Manthan"
-          text="The highlight of Spring Fest, this electrifying night brings a leading star to captivate the audience with a mesmerizing performance. Over the years, renowned artists have graced our stage, making it a night to remember. Get ready for an unforgettable musical journey!"
+          image="/assets/images/event_section/kristi.png"
+          title="Kristi"
+          text="The festival of Krishti gives a unique chance to see the beauty of time and to feel the complex cultural mix of the people who have lived in this land for ages, creating a splendid society that shows the combination of these different cultures. No matter where we live along the Barak or Brahmaputra rivers, we are all connected by a lovely fabric made of the golden threads of our cultural legacy."
+          reverse
+        />
+        <EventSection
+          image="/assets/images/event_section/bordoisila.png"
+          title="Bordoisila"
+          text="The NITS campus gets alive with captivating performances by the stunning 'Gabhorus', adorned in exquisite golden silk. It resembles the seasonal wind rushing back to her familial abode, bustling with fervor. "
+        />
+        <EventSection
+          image="/assets/images/event_section/abhijatri.png"
+          title="Abhijatri"
+          text="The true measure of our society's strength lies in our ability to embrace diversity and foster unity. Over the years, 'Bor-Axom' has embraced numerous communities and tribes, enriching the tapestry of the Greater Assamese Culture.  "
           reverse
         />
       </div>
