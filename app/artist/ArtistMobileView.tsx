@@ -77,13 +77,13 @@ const ArtistMobileView = () => {
             className="inline-block w-[15rem] h-[4rem] object-cover object-center"
             alt="Heading Image"
           />
-          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium font-moglan text-[#cb2229] text-center z-[4]">
+          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium font-moglan text-[#cb2229] text-center relative z-50">
             UPCOMING ARTISTS
           </p>
         </div>
 
         {/* Artist Wrapper Grid EXACTLY LIKE DESKTOP BUT SCALED FOR MOBILE */}
-        <div className="w-full flex-col flex justify-center items-center mt-[2rem] gap-[1rem]">
+        <div className="w-full flex-col flex justify-center items-center mt-[4rem] gap-[1rem]">
           {/* Artist 1 */}
           <div className="w-[45rem] h-[16rem] flex justify-center items-start transition-transform duration-300 cursor-pointer group scale-[0.45] sm:scale-[0.55] hover:scale-[0.48]" onClick={openPopup}>
             <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742922021/Music-ezgif.com-gif-maker_e5ygsd.gif' className="mt-[1.05rem] w-[6rem] h-[6rem] object-cover object-top -rotate-45 mix-blend-multiply -z-10 opacity-100 transition-opacity" alt='leftMusic' />
@@ -135,7 +135,7 @@ const ArtistMobileView = () => {
             className="inline-block w-[15rem] h-[4rem] object-cover object-center"
             alt="Heading Image"
           />
-          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium font-moglan text-[#cb2229] text-center z-4">
+          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium font-moglan text-[#cb2229] text-center relative z-50">
             PREVIOUS ARTISTS
           </p>
         </div>

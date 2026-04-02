@@ -59,7 +59,7 @@ const ArtistDesktop = () => {
 
   return (
     <div className="w-screen bg-[#ffffff] overflow-y-scroll overflow-x-hidden flex flex-col no-scrollbar min-h-screen">
-      <div className="w-full flex-grow flex flex-col items-center justify-center relative">
+      <div className="w-full flex-grow flex flex-col items-center justify-start relative">
         {/* Fixed Background Images */}
 
 
@@ -72,11 +72,11 @@ const ArtistDesktop = () => {
         {/* Heading Upcoming Artists */}
         <div className="w-full h-[10rem] flex flex-col justify-center items-center mt-[4rem]">
           <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742913661/Heading_ndgrgs.svg' className="block w-[15rem] h-[4rem] object-cover object-center" alt='heading' />
-          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium text-[#cb2229] text-center font-moglan">UPCOMING ARTISTS</p>
+          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium text-[#cb2229] text-center font-moglan relative z-20">UPCOMING ARTISTS</p>
         </div>
 
         {/* Artist Wrapper Grid */}
-        <div className="w-full h-[16rem] flex justify-center items-center mt-[5rem] gap-8 flex-col lg:flex-row">
+        <div className="w-full h-auto min-h-[16rem] flex justify-center items-center mt-[8rem] lg:mt-[5rem] gap-12 lg:gap-8 flex-col lg:flex-row">
           <div className="absolute bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742923319/rightGamusa_aadl38.png')] bg-contain bg-right  bg-no-repeat w-[75.689rem] h-[42.575rem] top-[4rem] right-0 filter brightness-80 opacity-20 z-10 pointer-events-none"></div>
           <div className="absolute bg-[url('https://res.cloudinary.com/dybzo3xly/image/upload/v1742922617/LeftGamusa_q8plub.png')] bg-contain bg-left bg-no-repeat w-[75.689rem] h-[42.575rem] top-[4rem] left-0  filter brightness-80 opacity-20 z-10 pointer-events-none"></div>
           {/* Artist 1 */}
@@ -126,7 +126,7 @@ const ArtistDesktop = () => {
         {/* Heading Previous Artists */}
         <div className="w-full h-[10rem] flex flex-col justify-center items-center mt-[4rem]">
           <img src='https://res.cloudinary.com/dybzo3xly/image/upload/v1742913661/Heading_ndgrgs.svg' className="block w-[15rem] h-[4rem] object-cover object-center" alt='heading' />
-          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium text-[#cb2229] text-center font-moglan">PREVIOUS ARTISTS</p>
+          <p className="mt-[-0.5rem] h-[1rem] w-[80%] text-3xl font-medium text-[#cb2229] text-center font-moglan relative z-20">PREVIOUS ARTISTS</p>
         </div>
 
         {/* Previous Artists Carousel */}
