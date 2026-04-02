@@ -92,7 +92,7 @@ export default function TeamPage() {
       role: "Chief Coordinator",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952437/NILPABAN_j2rcy1.webp",
-    },
+    }
   ];
 
   const executiveHeadsData = [
@@ -125,7 +125,7 @@ export default function TeamPage() {
       role: "Executive Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775057607/exe_new_w20vpo.webp",
-    },
+    }
   ];
 
   const techTeamData = [
@@ -134,6 +134,12 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774860603/barnil_s2m0ku.webp",
+    },
+    {
+      name: "Pragya Prabir Ranjan Deka",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dybzo3xly/image/upload/v1775133093/WhatsApp_Image_2026-04-02_at_11.44.03_snep0p.jpg",
     },
     {
       name: "Manash Pratim Goswami",
@@ -188,7 +194,7 @@ export default function TeamPage() {
       role: "UI/UX Member",
       imageSrc:
         "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774850093/mayur_kalita_jrt7jj.webp",
-    },
+    }
   ];
 
   const eventManagementData = [
@@ -251,37 +257,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
-    },
-    {
-      name: "Saswati Bhatta",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/IMG-20260328-WA0005_-_SASWATI_BHATTA_oakky5.webp",
-    },
-    {
-      name: "Sabera Rahman",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059782/IMG_20260329_013618_-_SABERA_RAHMAN_zsgvt8.webp",
-    },
-    {
-      name: "Rahul Sonowal",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/IMG-20250909-WA0091_Original_-_Rahul_Sonowal_kifcgf.webp",
-    },
-    {
-      name: "Uddipta Gautam",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/1000562706_-_Uddipta_G_B_scfud4.webp",
-    },
-    {
-      name: "Junaid Hassan",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059754/Junaid_Hassan__event_team_-_Junaid_Hassan_mjzxte.webp",
-    },
+    }
   ];
 
   const publicityTeamData = [
@@ -296,13 +272,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
-    },
-    {
-      name: "Aarnab Hazarika",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059785/IMG_2306_-_Aarnab_Hazarika_t7jdq3.webp",
-    },
+    }
   ];
 
   const marketingTeamData = [
@@ -332,19 +302,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
-    },
-    {
-      name: "CHAYANKA BHARADWAJ",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
-    },
-    {
-      name: "Anwesha Chetia",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059764/IMG-20260331-WA0002_-_Anwesha_Chetia_h6rfyt.webp",
-    },
+    }
   ];
 
   const culturalRallyData = [
@@ -413,85 +371,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059753/Kabirkrishnan_Head_Rally_-_Kabirkrishnan_Adhikary_w1cl8m.webp",
-    },
-    {
-      name: "Pranjal Pran Sonowal",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059786/IMG_1967_-_PRANJAL_PRAN_SONOWAL_123_bkio2v.webp",
-    },
-    {
-      name: "Uddipta Gautam",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/1000562706_-_Uddipta_G_B_scfud4.webp",
-    },
-    {
-      name: "Bikash Bhattacharjee",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059781/Bikash_co-head_Design_-_BIKASH_BHATTACHARJEE_kxwq01.webp",
-    },
-    {
-      name: "Tiju Baishya",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/IMG-20260328-WA0011_-_TIJU_BAISHYA_sqwooa.webp",
-    },
-    {
-      name: "Nibir Nilav Bora",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/IMG-20260102-WA0121_2_-_Nibir_Bora_swmuof.webp",
-    },
-    {
-      name: "Tanmay Parasar",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/IMG-20260215-WA0089_-_TANMAY_PARASAR_vmreef.webp",
-    },
-    {
-      name: "Progyan Swargiary",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062184/IMG_20260329_220716_-_bogimeow_niwyns.webp",
-    },
-    {
-      name: "Jishnu Borgohain",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/IMG_20260330_213128_-_Jishnu_Borgohain_llz5do.webp",
-    },
-    {
-      name: "Niranjan Deori",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059765/Niranjan_Deori__member_Deori_-_Niranjan_Deori_mjpo4u.webp",
-    },
-    {
-      name: "Mayur Jyoti Sarma",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059764/Mayur_Cultural_Rally_-_Mayur_Jyoti_Sarma_pre8hn.webp",
-    },
-    {
-      name: "Prachurya Pranab Barman",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062354/Prachurya_Pranab_Barman_Cultural_Rally_-_PRACHURYA_P_BARMAN_1_vg4i3z.webp",
-    },
-    {
-      name: "Riya Choudhury",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/IMG-20250825-WA0073_-_RIYA_CHOUDHURY_nb4por.webp",
-    },
-    {
-      name: "Bitopan Nath",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Myphoto_-_Bitopan_Nath_ianh0v.webp",
-    },
+    }
   ];
 
   const hospitalityTeamData = [
@@ -524,49 +404,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059763/Abinash_Das_Head_Hospitality_-_ABINASH_DAS_mpmz22.webp",
-    },
-    {
-      name: "Subhro shankha das",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059783/IMG20251020195655_-_Subhro_Shankha_Das_opzvve.webp",
-    },
-    {
-      name: "Pritam Kalita",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/Pritam_CO-Head_Hospitality_-_PRITAM_KALITA_fywnof.webp",
-    },
-    {
-      name: "CHAYANKA BHARADWAJ",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
-    },
-    {
-      name: "Sabera Rahman",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059782/IMG_20260329_013618_-_SABERA_RAHMAN_zsgvt8.webp",
-    },
-    {
-      name: "Devasish Rajguru",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059772/Devasish_Rajguru_Co-Head_Hospitality_-_DEVASISH_RAJGURU_yrtm1f.webp",
-    },
-    {
-      name: "Jilmil Saikia",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/IMG-20251211-WA0235_-_Jilmil_Saikia_arwv5h.webp",
-    },
-    {
-      name: "Jyotismrita Basisthya",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059758/IMG-20260321-WA0061_-_Jyotismrita_Basisthya_bq9y9v.webp",
-    },
+    }
   ];
 
   const foodTeamData = [
@@ -581,55 +419,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059770/IMG-20250405-WA0425_-_hiru_das_kygvs5.webp",
-    },
-    {
-      name: "Arnab Kalita",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059785/Screenshot_20260117_181335_Drive_-_ARNAB_KALITA_stjom0.webp",
-    },
-    {
-      name: "Kunal Paul",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059783/5C772D65-C132-409E-9D39-4BD899DE1600_Original_-_Kunal_PAuL_aw2wbo.webp",
-    },
-    {
-      name: "Nibir Baishya",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/IMG_20230920_152738_2_-_Nibir_Baishya_nfky8x.webp",
-    },
-    {
-      name: "ARPIT NANDI",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/ARPITNANDI_FOODTEAM_COHEAD_-_Subra_Nandi_xmromf.webp",
-    },
-    {
-      name: "Bibhujit Bharali",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059773/BIBHUJIT_NITS_FOOD_-_ME_018_BIBHUJIT_BHARALI_ga0blg.webp",
-    },
-    {
-      name: "Progyan Swargiary",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062184/IMG_20260329_220716_-_bogimeow_niwyns.webp",
-    },
-    {
-      name: "Kamaljyoti Senchowa",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/IMG_20241222_075226_-_Kamal_Senchowa_vwic73.webp",
-    },
-    {
-      name: "Junaid Hassan",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059754/Junaid_Hassan__event_team_-_Junaid_Hassan_mjzxte.webp",
-    },
+    }
   ];
 
   const securityTeamData = [
@@ -644,18 +434,12 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
-    },
-    {
-      name: "Avishikta Das",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/Avishikta_Das_Co-_Head_Security_-_Avishikta_Das_tnrz8u.webp",
-    },
+    }
   ];
 
-  const videographyTeamData = [
-    // Leave array empty for now until data is provided
-  ];
+  // const videographyTeamData = [
+  //   // Leave array empty for now until data is provided
+  // ];
 
   const contentTeamData = [
     {
@@ -663,67 +447,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059776/IMG_2191.JPG_-_Dhrubojyoti_Rajbongshi_nvwfo4.webp",
-    },
-    {
-      name: "Juman Saikia",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059786/Xompadokio_juman_-_Juman_Saikia_xkygn0.webp",
-    },
-    {
-      name: "Purav",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059781/purav_cohead_content_-_Purab_Prasad_t1d5l5.webp",
-    },
-    {
-      name: "Saswati Bhatta",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/IMG-20260328-WA0005_-_SASWATI_BHATTA_oakky5.webp",
-    },
-    {
-      name: "Nibir Nilav Bora",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/IMG-20260102-WA0121_2_-_Nibir_Bora_swmuof.webp",
-    },
-    {
-      name: "Abhijit Debnath",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059777/Abhijit_Co-head_Content_-_Abhijit_Debnath_s01jkh.webp",
-    },
-    {
-      name: "Tanmay Parasar",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/IMG-20260215-WA0089_-_TANMAY_PARASAR_vmreef.webp",
-    },
-    {
-      name: "Ujjwal Bhuyan",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059773/UjjwalBhuyan_CoHead_Content_Team_-_UJJWAL_BHUYAN_cfqpik.webp",
-    },
-    {
-      name: "Kamaljyoti Senchowa",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/IMG_20241222_075226_-_Kamal_Senchowa_vwic73.webp",
-    },
-    {
-      name: "Tonmoi Phukan",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059767/Tonmoi_Co_head_Content_Team_-_Tonmoi_Phukan_jw2sh3.webp",
-    },
-    {
-      name: "Jilmil saikia",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/IMG-20251211-WA0235_-_Jilmil_Saikia_arwv5h.webp",
-    },
+    }
   ];
 
   const decorationTeamData = [
@@ -756,37 +480,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059759/Abinash_Das_Head_Decoration_-_Abinash_Das_edmksq.webp",
-    },
-    {
-      name: "Pritam Kalita",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/Pritam_CO-Head_Hospitality_-_PRITAM_KALITA_fywnof.webp",
-    },
-    {
-      name: "Tiju Baishya",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/IMG-20260328-WA0011_-_TIJU_BAISHYA_sqwooa.webp",
-    },
-    {
-      name: "CHAYANKA BHARADWAJ",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
-    },
-    {
-      name: "Riniki Devi",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059775/Riniki_co_head_decoration_-_Riniki_Devi_eh5a9x.webp",
-    },
-    {
-      name: "BISHAL KUMAR",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059755/1000479262_resized_-_Bishal_Kumar_idlxx7.webp",
-    },
+    }
   ];
 
   const designTeamData = [
@@ -795,67 +489,7 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952456/SOURAV_DEKA_dkbj2t.webp",
-    },
-    {
-      name: "Pranjal Pran Sonowal",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059786/IMG_1967_-_PRANJAL_PRAN_SONOWAL_123_bkio2v.webp",
-    },
-    {
-      name: "CHAYANKA BHARADWAJ",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
-    },
-    {
-      name: "Saranga Pratim Bhuyan",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/SarangaPratimBhuyan_CoHead_DesignTeam_-_EIE_050__SARANGA_e5fmgt.webp",
-    },
-    {
-      name: "Bikash Bhattacharjee",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059781/Bikash_co-head_Design_-_BIKASH_BHATTACHARJEE_kxwq01.webp",
-    },
-    {
-      name: "Mayur Kalita",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059776/Mayur_Kalita_Co-head_Design_team_-_Sonu_Illipsis_bjmprl.webp",
-    },
-    {
-      name: "Samudra Buragohain",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059777/samudra_cohead_design_-_Samudra_Buragohain_zbj85o.webp",
-    },
-    {
-      name: "Ankita Devi",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059765/Ankita_Devi_Co_head_Design_Team_-_Ankita_Devi_upqrpw.webp",
-    },
-    {
-      name: "Tanmoy Talukdar",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059764/TanmoyTalukdar_CoHead_Design_-_ECE_167_Tanmoy_eju0r0.webp",
-    },
-    {
-      name: "Aishwarika Changmai",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Aishwarika_cohead_Designteam_-_Aishwarika_Changmai_djgtya.webp",
-    },
-    {
-      name: "Bitopan Nath",
-      role: "Co-Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Myphoto_-_Bitopan_Nath_ianh0v.webp",
-    },
+    }
   ];
 
   return (
@@ -1004,17 +638,6 @@ export default function TeamPage() {
         </section>
 
         <section className="relative w-full py-4 sm:py-6 z-10">
-          <TeamSectionHeader title="Tech Team" />
-          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
-            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
-              {techTeamData.map((member, i) => (
-                <TeamMemberCard key={i} {...member} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="relative w-full py-4 sm:py-6 z-10">
           <TeamSectionHeader title="EVENT MANAGEMENT" />
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
             <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
@@ -1102,7 +725,7 @@ export default function TeamPage() {
           </div>
         </section>
 
-        {videographyTeamData.length > 0 && (
+        {/* {videographyTeamData.length > 0 && (
           <section className="relative w-full py-4 sm:py-6 z-10">
             <TeamSectionHeader title="VIDEOGRAPHY TEAM" />
             <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
@@ -1113,7 +736,7 @@ export default function TeamPage() {
               </div>
             </div>
           </section>
-        )}
+        )} */}
 
         <section className="relative w-full py-4 sm:py-6 z-10">
           <TeamSectionHeader title="CONTENT TEAM" />
@@ -1142,6 +765,17 @@ export default function TeamPage() {
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
             <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
               {designTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+          <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="Tech Team" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {techTeamData.map((member, i) => (
                 <TeamMemberCard key={i} {...member} />
               ))}
             </div>
