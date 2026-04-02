@@ -14,6 +14,8 @@ const GalleryGrid = ({ activeYear }: Props) => {
       ? data.images1
       : activeYear === "2023"
       ? data.images2
+      : activeYear== "2025"
+      ? data.images4
       : data.images3;
 
   const images = rawImages.slice(0, 9);

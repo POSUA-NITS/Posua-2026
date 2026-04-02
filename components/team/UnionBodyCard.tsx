@@ -62,7 +62,7 @@ export default function UnionBodyCard({
 
           <div className="absolute -bottom-2 sm:-bottom-2 md:-bottom-4 z-20 w-[160px] sm:w-[220px] md:w-[250px] h-[50px] sm:h-[70px] md:h-[80px] bg-[#751515] rounded-[40px] shadow-lg flex flex-col items-center justify-center pointer-events-auto">
             <p
-              className={`text-white text-lg sm:text-2xl md:text-3xl font-normal leading-none tracking-wide transition-all duration-500 text-center ${
+              className={`text-white text-sm sm:text-xl md:text-xl font-normal leading-none tracking-wide transition-all duration-500 text-center ${
                 isTouched
                   ? "-translate-y-1 sm:-translate-y-2"
                   : "group-hover:-translate-y-1 sm:group-hover:-translate-y-2"
@@ -74,7 +74,7 @@ export default function UnionBodyCard({
 
             <div className="absolute bottom-1 sm:bottom-2 w-full flex justify-center pointer-events-none">
               <p
-                className={`text-[#e2dedb] text-[8px] sm:text-[10px] md:text-xs font-light tracking-widest uppercase transition-opacity duration-300 delay-200 text-center px-2 ${
+                className={`text-[#e2dedb] text-sm sm:text-lg md:text-lg font-light tracking-widest uppercase transition-opacity duration-300 delay-200 text-center px-2 ${
                   isTouched
                     ? "opacity-100"
                     : "opacity-0 group-hover:opacity-100"

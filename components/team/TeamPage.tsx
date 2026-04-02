@@ -6,7 +6,6 @@ import TeamMemberCard from "./TeamMemberCard";
 
 const PageHeader: React.FC = () => (
   <div className="flex flex-col items-center justify-center pb-4 relative w-full mt-4">
-    {/* frame1-removebg-preview 5.png */}
     <img
       src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930433/frame1-removebg-preview_5_vfkf5e.webp"
       alt=""
@@ -25,7 +24,6 @@ const PageHeader: React.FC = () => (
 const TeamSectionHeader: React.FC<{ title: string }> = ({ title }) => {
   return (
     <div className="flex flex-col items-center justify-center py-6 sm:py-8 md:py-10 relative w-full group overflow-hidden">
-      {/* frame1-removebg-preview 5.png */}
       <img
         src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930433/frame1-removebg-preview_5_vfkf5e.webp"
         alt=""
@@ -34,7 +32,6 @@ const TeamSectionHeader: React.FC<{ title: string }> = ({ title }) => {
       />
 
       <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-10 w-full relative px-2 sm:px-4">
-        {/* doo.-removebg-preview 1.png */}
         <img
           src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930429/doo.-removebg-preview_1_jsythx.webp"
           alt=""
@@ -48,7 +45,6 @@ const TeamSectionHeader: React.FC<{ title: string }> = ({ title }) => {
           {title}
         </h2>
 
-        {/* bohag_bihu-removebg-preview 1.png */}
         <img
           src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930429/bohag_bihu-removebg-preview_1_kju2di.webp"
           alt=""
@@ -59,153 +55,31 @@ const TeamSectionHeader: React.FC<{ title: string }> = ({ title }) => {
   );
 };
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="relative w-full pt-[60px] sm:pt-[100px] md:pt-[120px] pb-[40px] sm:pb-[80px] md:pb-[100px] mt-10">
-      <div className="absolute inset-x-0 top-0 bottom-0 z-0 overflow-hidden flex justify-center">
-        <div
-          className="w-[200%] sm:w-[150%] md:w-[120%] h-full rounded-t-[30%] overflow-hidden relative"
-          style={{
-            maskImage:
-              "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-          }}
-        >
-          {/* boat.gif */}
-          <img
-            src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1774017642/boat_gi2qcv.gif"
-            alt="Background"
-            className="absolute inset-0 w-full h-full object-cover object-bottom opacity-60"
-          />
-          <div className="absolute inset-0 bg-[#add8e6]/10 pointer-events-none" />
-        </div>
-      </div>
-
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-14 lg:px-20 pt-6">
-        <div className="flex justify-center sm:justify-start mb-8 sm:mb-14 relative z-30">
-          {/* পছোৱা.png (Posua) */}
-          <img
-            src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930428/%E0%A6%AA%E0%A6%9B%E0%A7%8B%E0%A7%B1%E0%A6%BE_lcvtuh.webp"
-            alt="Posua"
-            className="w-[180px] sm:w-[250px] md:w-[350px] lg:w-[450px] h-auto object-contain"
-          />
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 w-full max-w-5xl text-center sm:text-left">
-          <div className="flex flex-col gap-2 z-20 items-center sm:items-start">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#333] text-sm sm:text-base md:text-lg font-semibold hover:text-[#7a1a1a] transition-colors"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#333] text-sm sm:text-base md:text-lg font-semibold hover:text-[#7a1a1a] transition-colors"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#333] text-sm sm:text-base md:text-lg font-semibold hover:text-[#7a1a1a] transition-colors"
-            >
-              X
-            </a>
-
-            <div className="mt-4 flex flex-col items-center sm:items-start gap-2 w-full">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <label
-                  htmlFor="footer-email"
-                  className="text-[#333] text-sm sm:text-base md:text-lg font-semibold"
-                >
-                  Email*
-                </label>
-                <span className="text-[#6bb280] text-xs sm:text-sm md:text-base">
-                  to
-                </span>
-                <input
-                  id="footer-email"
-                  type="email"
-                  placeholder="posua@nits.ac.in"
-                  className="bg-transparent border-none text-[#6bb280] placeholder-[#6bb280] text-xs sm:text-sm md:text-base w-[130px] sm:w-[150px] outline-none text-center sm:text-left"
-                />
-              </div>
-              <button
-                type="button"
-                className="bg-[#8cc63f] hover:bg-[#7ab036] text-[#1a1a1a] text-xs sm:text-sm md:text-base font-bold px-4 py-1.5 sm:px-5 rounded-[4px] shadow-sm transition-transform hover:-translate-y-0.5 cursor-pointer mt-1"
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2 z-20 items-center sm:items-start">
-            <p className="text-[#333] text-sm sm:text-base md:text-lg font-semibold">
-              NIT Silchar
-            </p>
-            <p className="text-[#333] text-sm sm:text-base md:text-lg font-semibold">
-              NIT Road, Fakirtilla
-            </p>
-            <p className="text-[#333] text-sm sm:text-base md:text-lg font-semibold">
-              Silchar, Assam, 788010
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 sm:gap-5 z-20 items-center sm:items-start">
-            <div className="flex flex-col items-center sm:items-start">
-              <p className="text-[#333] text-sm sm:text-base md:text-lg font-semibold">
-                John Doe
-              </p>
-              <p className="text-[#c44a4a] text-xs sm:text-sm md:text-base font-medium">
-                +91 98975 89326
-              </p>
-            </div>
-            <div className="flex flex-col items-center sm:items-start">
-              <p className="text-[#333] text-sm sm:text-base md:text-lg font-semibold">
-                Lisa Williams
-              </p>
-              <p className="text-[#c44a4a] text-xs sm:text-sm md:text-base font-medium">
-                +91 95347 56282
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
 export default function TeamPage() {
-  const unionBodyData = Array(6).fill({
-    name: "John Doe",
-    role: "Head",
-    imageSrc: "",
-  });
-  const coreTeamData = [
+  const unionBodyData = [
     {
-      name: "Arindom Sarmah",
-      role: "Executive Head",
+      name: "Manabjyoti Das",
+      role: "Convenor",
       imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952441/ARINDOM_SARMAH_l0ha73.webp",
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952434/MANABJYOTI_DAS_mkl7vy.webp",
     },
+  ];
+
+  const tresData = [
+    {
+      name: "Kaushik Dihingia",
+      role: "Treasurer",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/KAUSHIK_DIHINGIA_zglniy.webp",
+    },
+  ];
+
+  const chiefData = [
     {
       name: "Ankur Jyoti Neog",
       role: "Chief Coordinator",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952449/Ankur_Jyoti_Neog_lryreg.webp",
-    },
-    {
-      name: "Sourav Deka",
-      role: "Executive Head",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952456/SOURAV_DEKA_dkbj2t.webp",
     },
     {
       name: "Pratyashi Nath",
@@ -219,11 +93,20 @@ export default function TeamPage() {
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952437/NILPABAN_j2rcy1.webp",
     },
+  ];
+
+  const executiveHeadsData = [
     {
-      name: "Manabjyoti Das",
-      role: "Convenor",
+      name: "Arindom Sarmah",
+      role: "Executive Head",
       imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952434/MANABJYOTI_DAS_mkl7vy.webp",
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952441/ARINDOM_SARMAH_l0ha73.webp",
+    },
+    {
+      name: "Sourav Deka",
+      role: "Executive Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952456/SOURAV_DEKA_dkbj2t.webp",
     },
     {
       name: "Akash barua",
@@ -232,18 +115,19 @@ export default function TeamPage() {
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/akash.executivehead.posua_-_ME_032_Akash_barua_yx4jai.webp",
     },
     {
-      name: "Kaushik Dihingia",
-      role: "Treasurer",
-      imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/KAUSHIK_DIHINGIA_zglniy.webp",
-    },
-    {
       name: "Saurov Jyoti Chutia",
       role: "Executive Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952446/Saurov_Jyoti_e0qjkq.webp",
     },
+    {
+      name: "Silpangana Sandilya",
+      role: "Executive Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775057607/exe_new_w20vpo.webp",
+    },
   ];
+
   const techTeamData = [
     {
       name: "Barnil Sarma",
@@ -307,12 +191,678 @@ export default function TeamPage() {
     },
   ];
 
+  const eventManagementData = [
+    {
+      name: "Nashif Ahmed",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059787/IMG_1896_-_NASHIF_AHMED_isphns.webp",
+    },
+    {
+      name: "Dibya Pratim Kalita",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775061968/Dibya_Pratim_Kalita__Head_Event_Management_-_Dibya_pratim_Kalita_1_p8orzu.webp",
+    },
+    {
+      name: "Kaushik Talukdar",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059776/Kaushik_Talukdar_Head_Event_Management_-_Kaushik_Talukdar_k7kxfp.webp",
+    },
+    {
+      name: "Manash Jyoti Medhi",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/Manash_Medhi_Head_Event_Management_-_EE_150_MANASH_JYOTI_MEDHI_edzc8z.webp",
+    },
+    {
+      name: "Sandipan Nandi",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059771/Sandipan_Nandi_Head_Event_Management_-_Sandipan_Nandi_mof3vo.webp",
+    },
+    {
+      name: "Bitopan Baishya",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059770/Bitopan_Baishya_Head_Decoration_-_Bitopan_Baishya_ustcvl.webp",
+    },
+    {
+      name: "Dishan Medhi",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/Dishan_-_ME_074_Dishan_Medhi_zqfxqr.webp",
+    },
+    {
+      name: "Arnab Rajbongshi",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Arnab_Rajbongshi_Head_Event_Management_-_Arnab_Rajbongshi_zidzwt.webp",
+    },
+    {
+      name: "Mirzanur Rahman",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775061518/Mirzanur_Rahman_Head_Event_Management_-_Mirzanur_Rahman_1_fxi2st.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+    },
+    {
+      name: "Saswati Bhatta",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/IMG-20260328-WA0005_-_SASWATI_BHATTA_oakky5.webp",
+    },
+    {
+      name: "Sabera Rahman",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059782/IMG_20260329_013618_-_SABERA_RAHMAN_zsgvt8.webp",
+    },
+    {
+      name: "Rahul Sonowal",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/IMG-20250909-WA0091_Original_-_Rahul_Sonowal_kifcgf.webp",
+    },
+    {
+      name: "Uddipta Gautam",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/1000562706_-_Uddipta_G_B_scfud4.webp",
+    },
+    {
+      name: "Junaid Hassan",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059754/Junaid_Hassan__event_team_-_Junaid_Hassan_mjzxte.webp",
+    },
+  ];
+
+  const publicityTeamData = [
+    {
+      name: "Aniket Dutta",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059752/IMG_5147_Original_-_Aniket_Dutta_topapk.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+    },
+    {
+      name: "Aarnab Hazarika",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059785/IMG_2306_-_Aarnab_Hazarika_t7jdq3.webp",
+    },
+  ];
+
+  const marketingTeamData = [
+    {
+      name: "Sandipan Sarma",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775063295/PXL_20251105_061917521.PORTRAIT_-_Sandipan_Sarma_1_lcons9.webp",
+    },
+    {
+      name: "Mriganka Baishya",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/Mriganka_Head_Marketing_-_Mriganka_Baishya_wfxdwg.webp",
+    }
+  ];
+
+  const infraLogisticsData = [
+    {
+      name: "Karan Jyoti Baro",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059777/Karanjyotibaro_head_Infraandlogistics_-_KARAN_JYOTI_BARO_osijhk.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+    },
+    {
+      name: "CHAYANKA BHARADWAJ",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
+    },
+    {
+      name: "Anwesha Chetia",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059764/IMG-20260331-WA0002_-_Anwesha_Chetia_h6rfyt.webp",
+    },
+  ];
+
+  const culturalRallyData = [
+    {
+      name: "Mukut Thakuria",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059773/Mukut_Thakuria__Head__Cultural_Rally_fulfid.webp",
+    },
+    {
+      name: "Smriti Khakolary",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/Smriti_Khakolary_Head_decorationteam_-_Smriti_Khakolary_kuqalf.webp",
+    },
+    {
+      name: "Neeharika Rabha",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/Neeharika_Rabha_Head_Cultural_Rally_-_ECE_089_Neeharika_Rabha_xe1pyq.webp",
+    },
+    {
+      name: "Jyotishman Mahanta",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/Jyotishman_Head_Cultural_rally_-_Jyotishman_Mahanta_ggj41v.webp",
+    },
+    {
+      name: "Zidan Ahmed",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059771/Zidan_Ahmed_Head_Cultural_Rally_-_EE_133_ZIDAN_AHMED_lcuy3x.webp",
+    },
+    {
+      name: "Kashyap Patar",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059771/1772217236327_2_-_EE_014__Kashyap_patar_md4cu6.webp",
+    },
+    {
+      name: "Dhritimaan Hazarika",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062104/Dhritimaan_Hazarika_Head_Culture_Rally_-_Dhritimaan_Hazarika_1_dlyoe8.webp",
+    },
+    {
+      name: "Dhritiman Baishya",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059770/DhritimanBaishya_Head_CulturalRally_-_Dhritiman_Baishya_syy2jp.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+    },
+    {
+      name: "Surajit mali",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059757/IMG-20251027-WA0026_-_surajit_mali_wgbpp4.webp",
+    },
+    {
+      name: "Kabirkrishnan Adhikary",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059753/Kabirkrishnan_Head_Rally_-_Kabirkrishnan_Adhikary_w1cl8m.webp",
+    },
+    {
+      name: "Pranjal Pran Sonowal",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059786/IMG_1967_-_PRANJAL_PRAN_SONOWAL_123_bkio2v.webp",
+    },
+    {
+      name: "Uddipta Gautam",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/1000562706_-_Uddipta_G_B_scfud4.webp",
+    },
+    {
+      name: "Bikash Bhattacharjee",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059781/Bikash_co-head_Design_-_BIKASH_BHATTACHARJEE_kxwq01.webp",
+    },
+    {
+      name: "Tiju Baishya",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/IMG-20260328-WA0011_-_TIJU_BAISHYA_sqwooa.webp",
+    },
+    {
+      name: "Nibir Nilav Bora",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/IMG-20260102-WA0121_2_-_Nibir_Bora_swmuof.webp",
+    },
+    {
+      name: "Tanmay Parasar",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/IMG-20260215-WA0089_-_TANMAY_PARASAR_vmreef.webp",
+    },
+    {
+      name: "Progyan Swargiary",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062184/IMG_20260329_220716_-_bogimeow_niwyns.webp",
+    },
+    {
+      name: "Jishnu Borgohain",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/IMG_20260330_213128_-_Jishnu_Borgohain_llz5do.webp",
+    },
+    {
+      name: "Niranjan Deori",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059765/Niranjan_Deori__member_Deori_-_Niranjan_Deori_mjpo4u.webp",
+    },
+    {
+      name: "Mayur Jyoti Sarma",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059764/Mayur_Cultural_Rally_-_Mayur_Jyoti_Sarma_pre8hn.webp",
+    },
+    {
+      name: "Prachurya Pranab Barman",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062354/Prachurya_Pranab_Barman_Cultural_Rally_-_PRACHURYA_P_BARMAN_1_vg4i3z.webp",
+    },
+    {
+      name: "Riya Choudhury",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/IMG-20250825-WA0073_-_RIYA_CHOUDHURY_nb4por.webp",
+    },
+    {
+      name: "Bitopan Nath",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Myphoto_-_Bitopan_Nath_ianh0v.webp",
+    },
+  ];
+
+  const hospitalityTeamData = [
+    {
+      name: "Chanakya Thoumoung",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059785/20231227_104203_-_Chanakya_Thoumoung_xdekjt.webp",
+    },
+    {
+      name: "Neeharika Rabha",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/Neeharika_Rabha_Head_Cultural_Rally_-_ECE_089_Neeharika_Rabha_xe1pyq.webp",
+    },
+    {
+      name: "Aniket Dutta",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059752/IMG_5147_Original_-_Aniket_Dutta_topapk.webp",
+    },
+    {
+      name: "Akash Neog",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059748/IMG_9496_-_Akash_Neog_qyrcir.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059763/Abinash_Das_Head_Hospitality_-_ABINASH_DAS_mpmz22.webp",
+    },
+    {
+      name: "Subhro shankha das",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059783/IMG20251020195655_-_Subhro_Shankha_Das_opzvve.webp",
+    },
+    {
+      name: "Pritam Kalita",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/Pritam_CO-Head_Hospitality_-_PRITAM_KALITA_fywnof.webp",
+    },
+    {
+      name: "CHAYANKA BHARADWAJ",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
+    },
+    {
+      name: "Sabera Rahman",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059782/IMG_20260329_013618_-_SABERA_RAHMAN_zsgvt8.webp",
+    },
+    {
+      name: "Devasish Rajguru",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059772/Devasish_Rajguru_Co-Head_Hospitality_-_DEVASISH_RAJGURU_yrtm1f.webp",
+    },
+    {
+      name: "Jilmil Saikia",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/IMG-20251211-WA0235_-_Jilmil_Saikia_arwv5h.webp",
+    },
+    {
+      name: "Jyotismrita Basisthya",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059758/IMG-20260321-WA0061_-_Jyotismrita_Basisthya_bq9y9v.webp",
+    },
+  ];
+
+  const foodTeamData = [
+    {
+      name: "Nipun Baishya",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059785/Nipun_head_foodteam_-_ME_010_NIPUN_BAISHYA_ko4hln.webp",
+    },
+    {
+      name: "Hirumoni das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059770/IMG-20250405-WA0425_-_hiru_das_kygvs5.webp",
+    },
+    {
+      name: "Arnab Kalita",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059785/Screenshot_20260117_181335_Drive_-_ARNAB_KALITA_stjom0.webp",
+    },
+    {
+      name: "Kunal Paul",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059783/5C772D65-C132-409E-9D39-4BD899DE1600_Original_-_Kunal_PAuL_aw2wbo.webp",
+    },
+    {
+      name: "Nibir Baishya",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/IMG_20230920_152738_2_-_Nibir_Baishya_nfky8x.webp",
+    },
+    {
+      name: "ARPIT NANDI",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/ARPITNANDI_FOODTEAM_COHEAD_-_Subra_Nandi_xmromf.webp",
+    },
+    {
+      name: "Bibhujit Bharali",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059773/BIBHUJIT_NITS_FOOD_-_ME_018_BIBHUJIT_BHARALI_ga0blg.webp",
+    },
+    {
+      name: "Progyan Swargiary",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062184/IMG_20260329_220716_-_bogimeow_niwyns.webp",
+    },
+    {
+      name: "Kamaljyoti Senchowa",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/IMG_20241222_075226_-_Kamal_Senchowa_vwic73.webp",
+    },
+    {
+      name: "Junaid Hassan",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059754/Junaid_Hassan__event_team_-_Junaid_Hassan_mjzxte.webp",
+    },
+  ];
+
+  const securityTeamData = [
+    {
+      name: "Dishan",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/Dishan_-_ME_074_Dishan_Medhi_zqfxqr.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+    },
+    {
+      name: "Avishikta Das",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/Avishikta_Das_Co-_Head_Security_-_Avishikta_Das_tnrz8u.webp",
+    },
+  ];
+
+  const videographyTeamData = [
+    // Leave array empty for now until data is provided
+  ];
+
+  const contentTeamData = [
+    {
+      name: "Dhrubojyoti Rajbongshi",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059776/IMG_2191.JPG_-_Dhrubojyoti_Rajbongshi_nvwfo4.webp",
+    },
+    {
+      name: "Juman Saikia",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059786/Xompadokio_juman_-_Juman_Saikia_xkygn0.webp",
+    },
+    {
+      name: "Purav",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059781/purav_cohead_content_-_Purab_Prasad_t1d5l5.webp",
+    },
+    {
+      name: "Saswati Bhatta",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/IMG-20260328-WA0005_-_SASWATI_BHATTA_oakky5.webp",
+    },
+    {
+      name: "Nibir Nilav Bora",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059778/IMG-20260102-WA0121_2_-_Nibir_Bora_swmuof.webp",
+    },
+    {
+      name: "Abhijit Debnath",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059777/Abhijit_Co-head_Content_-_Abhijit_Debnath_s01jkh.webp",
+    },
+    {
+      name: "Tanmay Parasar",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059774/IMG-20260215-WA0089_-_TANMAY_PARASAR_vmreef.webp",
+    },
+    {
+      name: "Ujjwal Bhuyan",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059773/UjjwalBhuyan_CoHead_Content_Team_-_UJJWAL_BHUYAN_cfqpik.webp",
+    },
+    {
+      name: "Kamaljyoti Senchowa",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059768/IMG_20241222_075226_-_Kamal_Senchowa_vwic73.webp",
+    },
+    {
+      name: "Tonmoi Phukan",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059767/Tonmoi_Co_head_Content_Team_-_Tonmoi_Phukan_jw2sh3.webp",
+    },
+    {
+      name: "Jilmil saikia",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059762/IMG-20251211-WA0235_-_Jilmil_Saikia_arwv5h.webp",
+    },
+  ];
+
+  const decorationTeamData = [
+    {
+      name: "Smriti Khakolary",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/Smriti_Khakolary_Head_decorationteam_-_Smriti_Khakolary_kuqalf.webp",
+    },
+    {
+      name: "Koushik Ranjan Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059780/Screenshot_20260328_162321_-_Koushik_Das_osv6e9.webp",
+    },
+    {
+      name: "Sanjana Devi",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775062580/Sanjana_Devi__Head__Decoration_team_-_Sanjana_1_i5zbgr.webp",
+    },
+    {
+      name: "Bitopan Baishya",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059770/Bitopan_Baishya_Head_Decoration_-_Bitopan_Baishya_ustcvl.webp",
+    },
+    {
+      name: "Abinash Das",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059759/Abinash_Das_Head_Decoration_-_Abinash_Das_edmksq.webp",
+    },
+    {
+      name: "Pritam Kalita",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/Pritam_CO-Head_Hospitality_-_PRITAM_KALITA_fywnof.webp",
+    },
+    {
+      name: "Tiju Baishya",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059779/IMG-20260328-WA0011_-_TIJU_BAISHYA_sqwooa.webp",
+    },
+    {
+      name: "CHAYANKA BHARADWAJ",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
+    },
+    {
+      name: "Riniki Devi",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059775/Riniki_co_head_decoration_-_Riniki_Devi_eh5a9x.webp",
+    },
+    {
+      name: "BISHAL KUMAR",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059755/1000479262_resized_-_Bishal_Kumar_idlxx7.webp",
+    },
+  ];
+
+  const designTeamData = [
+    {
+      name: "Sourav Deka",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952456/SOURAV_DEKA_dkbj2t.webp",
+    },
+    {
+      name: "Pranjal Pran Sonowal",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059786/IMG_1967_-_PRANJAL_PRAN_SONOWAL_123_bkio2v.webp",
+    },
+    {
+      name: "CHAYANKA BHARADWAJ",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/WhatsApp_Image_2025-11-10_at_23.15.43_-_Chayanka_Bharadwaj_nkoksn.webp",
+    },
+    {
+      name: "Saranga Pratim Bhuyan",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059784/SarangaPratimBhuyan_CoHead_DesignTeam_-_EIE_050__SARANGA_e5fmgt.webp",
+    },
+    {
+      name: "Bikash Bhattacharjee",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059781/Bikash_co-head_Design_-_BIKASH_BHATTACHARJEE_kxwq01.webp",
+    },
+    {
+      name: "Mayur Kalita",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059776/Mayur_Kalita_Co-head_Design_team_-_Sonu_Illipsis_bjmprl.webp",
+    },
+    {
+      name: "Samudra Buragohain",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059777/samudra_cohead_design_-_Samudra_Buragohain_zbj85o.webp",
+    },
+    {
+      name: "Ankita Devi",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059765/Ankita_Devi_Co_head_Design_Team_-_Ankita_Devi_upqrpw.webp",
+    },
+    {
+      name: "Tanmoy Talukdar",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059764/TanmoyTalukdar_CoHead_Design_-_ECE_167_Tanmoy_eju0r0.webp",
+    },
+    {
+      name: "Aishwarika Changmai",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Aishwarika_cohead_Designteam_-_Aishwarika_Changmai_djgtya.webp",
+    },
+    {
+      name: "Bitopan Nath",
+      role: "Co-Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059760/Myphoto_-_Bitopan_Nath_ianh0v.webp",
+    },
+  ];
+
   return (
     <main className="min-h-screen w-full bg-white overflow-x-hidden relative flex flex-col items-center">
       <div className="hidden sm:block absolute top-[80px] md:top-[120px] left-0 right-0 h-[4px] sm:h-[6px] bg-[#c08080]/60 z-20 pointer-events-none" />
       <div className="hidden sm:block absolute bottom-[20px] left-0 right-0 h-[4px] sm:h-[6px] bg-[#c08080]/60 z-20 pointer-events-none" />
 
-      {/* Mask group.png */}
       <img
         src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1774017380/Mask_group_mkjmcq.webp"
         alt=""
@@ -320,7 +870,6 @@ export default function TeamPage() {
         className="absolute top-[100px] sm:top-[140px] md:top-[180px] left-0 w-[150px] sm:w-[250px] md:w-[400px] lg:w-[650px] opacity-40 pointer-events-none z-[1] mix-blend-multiply"
       />
 
-      {/* coral-removebg-preview 3.png */}
       <img
         src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930440/coral-removebg-preview_3_fb97q4.webp"
         alt=""
@@ -328,14 +877,13 @@ export default function TeamPage() {
         className="absolute bottom-[600px] sm:bottom-[900px] lg:bottom-[1100px] left-[-2%] w-[120px] sm:w-[200px] md:w-[300px] lg:w-[400px] opacity-70 pointer-events-none z-[0] mix-blend-multiply"
       />
 
-      {/* 8805-removebg-preview 2.png */}
       <img
         src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930433/8805-removebg-preview_2_xqqoph.webp"
         alt=""
         aria-hidden="true"
         className="absolute top-[800px] sm:top-[1100px] lg:top-[1400px] left-0 w-[100px] sm:w-[150px] md:w-[250px] lg:w-[450px] opacity-65 pointer-events-none z-[0] mix-blend-multiply"
       />
-      {/* 8805-removebg-preview 2 (1).png */}
+
       <img
         src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930438/8805-removebg-preview_2_1_h9ghzv.webp"
         alt=""
@@ -345,7 +893,6 @@ export default function TeamPage() {
 
       <div className="w-full max-w-[1150px] relative bg-transparent flex flex-col items-center pt-[60px] sm:pt-[100px] md:pt-[130px]">
         <div className="absolute top-[150px] sm:top-[200px] md:top-[280px] inset-x-0 flex justify-center pointer-events-none z-[0]">
-          {/* VECTOR_ART__Chinmoy_Sharma-removebg-preview 1.png */}
           <img
             src="https://res.cloudinary.com/dffm4zxpc/image/upload/v1773930436/VECTOR_ART__Chinmoy_Sharma-removebg-preview_1_mnnuny.webp"
             alt=""
@@ -376,58 +923,81 @@ export default function TeamPage() {
             the barriers among the crowd and bringing everyone together.
           </p>
         </div>
-{/* 
+
+        {/* --- UNION BODY SECTION --- */}
         <section className="relative w-full py-4 sm:py-6 z-10 mt-2 sm:mt-10">
-          <div className="w-full relative px-4 sm:px-6 md:px-10 flex flex-col items-center justify-center mb-8 sm:mb-20 gap-4 sm:gap-0">
-            <div className="flex flex-col sm:flex-row justify-between w-full relative z-10 gap-8 sm:gap-0 max-w-[1150px]">
-              <div className="w-full sm:w-auto flex justify-start sm:-ml-4 md:-ml-8 transition-transform">
+          <div className="w-full flex justify-center px-4 sm:px-6 md:px-10 mb-8 sm:mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 sm:gap-y-14 md:gap-y-16 gap-x-8 sm:gap-x-16 md:gap-x-24 justify-items-center max-w-[1000px] w-full">
+              <UnionBodyCard
+                name="Prof. Dilip Kumar Baidya"
+                role="CHIEF-PATRON"
+                imageSrc="https://res.cloudinary.com/dhpqjrbha/image/upload/v1743704061/director_catbvj.webp"
+              />
+              <UnionBodyCard
+                name="Prof. Upendra Kumar"
+                role="PATRON"
+                imageSrc="https://res.cloudinary.com/dustrkqlj/image/upload/v1775023981/IMG_1753978356688b95f42dcd1_lif9hh.webp"
+              />
+              <UnionBodyCard
+                name="Prof. Rahul Dev Misra"
+                role="PRESIDENT"
+                imageSrc="https://res.cloudinary.com/dustrkqlj/image/upload/v1775024051/IMG_174134284467cac87c778b1_hcfrgd.webp"
+              />
+              <UnionBodyCard
+                name="Dr Malaya Dutta Borah"
+                role="VICE-PRESIDENT"
+                imageSrc="https://res.cloudinary.com/dmezugavw/image/upload/v1743618531/malaya_fqmdje.webp"
+              />
+              <div className="sm:col-span-2 flex justify-center w-full">
                 <UnionBodyCard
-                  name="John Doe"
-                  role="Chief Patron"
-                  imageSrc=""
+                  name="Dr. Parikshit Saikia"
+                  role="VICE-PRESIDENT"
+                  imageSrc="https://res.cloudinary.com/dustrkqlj/image/upload/v1775024122/IMG_1753450173688386bd8119d_ijfcsx.webp"
                 />
               </div>
-              <div className="w-full sm:w-auto flex justify-end sm:-mr-4 md:-mr-8 transition-transform">
-                <UnionBodyCard
-                  name="John Doe"
-                  role="Chief Patron"
-                  imageSrc=""
-                />
-              </div>
-            </div>
-            <div className="flex justify-center w-full mt-4 sm:-mt-16 md:-mt-24 lg:-mt-32 relative z-20">
-              <UnionBodyCard name="John Doe" role="Chief Patron" imageSrc="" />
             </div>
           </div>
-        </section> */}
-{/* 
+        </section>
+
         <section className="relative w-full py-4 sm:py-6 z-10">
-          <TeamSectionHeader title="Union Body" />
+          <TeamSectionHeader title="CONVENOR" />
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 justify-items-center max-w-[1150px] w-full">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
               {unionBodyData.map((member, i) => (
-                <TeamMemberCard
-                  key={i}
-                  name={member.name}
-                  role={member.role}
-                  imageSrc={member.imageSrc}
-                />
+                <TeamMemberCard key={i} {...member} />
               ))}
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section className="relative w-full py-4 sm:py-6 z-10">
-          <TeamSectionHeader title="Core Team" />
+          <TeamSectionHeader title="CHIEF-COORDINATORS" />
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 justify-items-center max-w-[1150px] w-full">
-              {coreTeamData.map((member, i) => (
-                <TeamMemberCard
-                  key={i}
-                  name={member.name}
-                  role={member.role}
-                  imageSrc={member.imageSrc}
-                />
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {chiefData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="TREASURER" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {tresData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="EXECUTIVE HEADS" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {executiveHeadsData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
               ))}
             </div>
           </div>
@@ -436,23 +1006,148 @@ export default function TeamPage() {
         <section className="relative w-full py-4 sm:py-6 z-10">
           <TeamSectionHeader title="Tech Team" />
           <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 justify-items-center max-w-[1150px] w-full">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
               {techTeamData.map((member, i) => (
-                <TeamMemberCard
-                  key={i}
-                  name={member.name}
-                  role={member.role}
-                  imageSrc={member.imageSrc}
-                />
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="EVENT MANAGEMENT" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {eventManagementData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="MARKETING TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {marketingTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="PUBLICITY TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {publicityTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="INFRA & LOGISTICS TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {infraLogisticsData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="CULTURAL RALLY" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {culturalRallyData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="HOSPITALITY TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {hospitalityTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="FOOD TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {foodTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="SECURITY TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {securityTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {videographyTeamData.length > 0 && (
+          <section className="relative w-full py-4 sm:py-6 z-10">
+            <TeamSectionHeader title="VIDEOGRAPHY TEAM" />
+            <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+              <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+                {videographyTeamData.map((member, i) => (
+                  <TeamMemberCard key={i} {...member} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="CONTENT TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {contentTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="DECORATION TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {decorationTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative w-full py-4 sm:py-6 z-10">
+          <TeamSectionHeader title="DESIGN TEAM" />
+          <div className="w-full flex justify-center px-4 mt-2 sm:mt-4 mb-10 sm:mb-16">
+            <div className="flex flex-wrap justify-center gap-y-10 sm:gap-y-12 md:gap-y-14 gap-x-4 sm:gap-x-8 md:gap-x-10 max-w-[1150px] w-full">
+              {designTeamData.map((member, i) => (
+                <TeamMemberCard key={i} {...member} />
               ))}
             </div>
           </div>
         </section>
       </div>
-
-      {/* <div className="w-full relative z-10 mt-8 sm:mt-10">
-        <Footer />
-      </div> */}
     </main>
   );
 }

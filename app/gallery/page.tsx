@@ -5,7 +5,7 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 import GalleryFilter from "@/components/gallery/GalleryFilter";
 
 export default function GalleryPage() {
-  const [activeYear, setActiveYear] = useState("2024");
+  const [activeYear, setActiveYear] = useState("2025");
 
   return (
     <main
