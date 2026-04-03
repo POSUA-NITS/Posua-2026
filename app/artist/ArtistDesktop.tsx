@@ -32,7 +32,7 @@ const ArtistDesktop = () => {
       return upoharRef.current;
     } else if (track === 'akakhe') {
       if (!akakheRef.current) {
-        const audio = new Audio('/Akakhe Botahe.mp3');
+        const audio = new Audio('/AkakheBotahe.mp3');
         audio.loop = false;
         akakheRef.current = audio;
       }
