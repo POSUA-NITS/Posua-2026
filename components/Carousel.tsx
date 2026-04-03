@@ -58,9 +58,9 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
     <>
       <div className="w-full h-full flex justify-center items-center">
         <div className="relative w-full h-[30rem] lg:w-[48rem] lg:h-[30rem] flex justify-center items-center" ref={carouselRef}>
-          {Array.from({ length: VISIBLE_CARDS }, (_, index) => {
-            const cardIndex = (active + index - Math.floor(VISIBLE_CARDS / 2) + count) % count;
-            const offset = index - Math.floor(VISIBLE_CARDS / 2);
+          {Array.from({ length: Math.min(VISIBLE_CARDS, count) }, (_, index) => {
+            const cardIndex = (active + index - Math.floor(Math.min(VISIBLE_CARDS, count) / 2) + count) % count;
+            const offset = index - Math.floor(Math.min(VISIBLE_CARDS, count) / 2);
             const absOffset = Math.abs(offset);
             let scale = 1;
 
