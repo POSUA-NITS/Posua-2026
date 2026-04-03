@@ -256,7 +256,7 @@ export default function TeamPage() {
       name: "Abinash Das",
       role: "Head",
       imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+        "https://res.cloudinary.com/dhry5xscm/image/upload/v1775207233/q9ztzh9ye2rtwmn1jnq0_vmqcla.webp",
     }
   ];
 
@@ -271,7 +271,7 @@ export default function TeamPage() {
       name: "Abinash Das",
       role: "Head",
       imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+        "https://res.cloudinary.com/dhry5xscm/image/upload/v1775207236/j8wbbahsdaxjly5dc8qc_e4gyw1.webp",
     }
   ];
 
@@ -301,7 +301,7 @@ export default function TeamPage() {
       name: "Abinash Das",
       role: "Head",
       imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+        "https://res.cloudinary.com/dhry5xscm/image/upload/v1775207234/zx9dtcrs5avpctrjoxia_fdbnav.webp",
     }
   ];
 
@@ -433,7 +433,7 @@ export default function TeamPage() {
       name: "Abinash Das",
       role: "Head",
       imageSrc:
-        "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059766/Abinash_Das_Head_Cultural_Rally_-_Abinash_Das_da6rwh.webp",
+        "https://res.cloudinary.com/dhry5xscm/image/upload/v1775207235/azpqiuzwplzxjdddj7s0_oosbzi.webp",
     }
   ];
 
@@ -447,6 +447,23 @@ export default function TeamPage() {
       role: "Head",
       imageSrc:
         "https://res.cloudinary.com/dustrkqlj/image/upload/v1775059776/IMG_2191.JPG_-_Dhrubojyoti_Rajbongshi_nvwfo4.webp",
+    },
+    {
+      name: "Barnil Sarma",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dffm4zxpc/image/upload/v1774860603/barnil_s2m0ku.webp",
+    },
+    {
+      name: "Arindom Sarmah",
+      role: "Head",
+      imageSrc:
+        "https://res.cloudinary.com/dustrkqlj/image/upload/v1774952441/ARINDOM_SARMAH_l0ha73.webp",
+    },
+    {
+      name:"Kritika Das",
+      role: "Head",
+      imageSrc:"https://res.cloudinary.com/dhry5xscm/image/upload/v1775207927/WhatsApp_Image_2026-04-03_at_2.46.27_PM_hzfvvq.webp"
     }
   ];
 
