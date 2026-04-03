@@ -70,7 +70,8 @@ const ArtistMobileView = () => {
     { id: 2, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607390/ZubeenGarg_ybmmad.webp", alt: "Zubeen Garg", tit: "Singer" },
     { id: 3, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607390/Priyanka_Bharali_fzetdl.webp", alt: "Priyanka Bharali", tit: "Singer" },
     { id: 4, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607391/SrimantaShekhar_xtzq9z.webp", alt: "Simanta Shekhar", tit: "Singer" },
-    { id: 5, url: "https://res.cloudinary.com/dybzo3xly/image/upload/v1743607398/PaponMahanta_hg0shr.webp", alt: "Angaraag Mahanta", tit: "Singer" },
+    { id: 5, url: "https://instagram.fgau4-1.fna.fbcdn.net/v/t51.82787-15/656372636_18152180035459527_5997504253539462665_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzY3OTQ4MjUyMzY4ODkxNTgyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=bVH6plG01v0Q7kNvwGCn5KQ&_nc_oc=AdpIGlKeBnOfsZ1zU2gQLB6cL61T0jArxiY3RLKAKLuGWaUUv_U1Wl3Cs08CrwExbh4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fgau4-1.fna&_nc_gid=JtzceWEgG1e49i2WS9xDrg&_nc_ss=7a32e&oh=00_Af3Uo4umdQMLzOics_yNqxUx7kUOrVzoyE3oSe6qnEAh5A&oe=69D52113", alt: "Zublee Baruah", tit: "Singer" },
+
   ];
 
   return (
